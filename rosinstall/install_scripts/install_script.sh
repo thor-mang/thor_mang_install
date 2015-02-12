@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cd $THOR_ROOT
+
 # parse parameters
 while [ -n "$1" ]; do
     case $1 in
