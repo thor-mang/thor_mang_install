@@ -1,0 +1,5 @@
+- git:
+    uri: git@git.sim.informatik.tu-darmstadt.de:oehler/thor_mang_demo.git
+    local-name: src/thor_mang/thor_mang_demo
+    version: master
+

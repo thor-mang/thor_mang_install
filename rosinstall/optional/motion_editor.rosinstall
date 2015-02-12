@@ -1,0 +1,5 @@
+- git:
+    uri: git@git.sim.informatik.tu-darmstadt.de:oehler/thor_mang_motion_editor.git
+    local-name: src/thor_mang_motion_editor
+    version: master
+

@@ -1,0 +1,1 @@
+- git: {local-name: src/thor_mang/thor_mang_simulation, uri: 'git@git.sim.informatik.tu-darmstadt.de:kohlbrecher/thor_op_gazebo.git', version: master}
