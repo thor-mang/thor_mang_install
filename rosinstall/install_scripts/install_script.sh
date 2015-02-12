@@ -23,7 +23,7 @@ fi
 # install
 
 # make sure package dependencies are installed
-source ./$THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
+source $THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
 
 # delete old files
 echo Cleaning up old workspace files...
