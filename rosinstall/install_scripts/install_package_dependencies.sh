@@ -8,11 +8,11 @@ mercurial \
 git \
 python-rosdep \
 python-wstool \
-ros-indigo-desktop \
-ros-indigo-serial \
-ros-indigo-hector-slam \
-ros-indigo-hector-localization \
-ros-indigo-map-server"
+ros-hydro-desktop \
+ros-hydro-serial \
+ros-hydro-hector-slam \
+ros-hydro-hector-localization \
+ros-hydro-map-server"
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
 
