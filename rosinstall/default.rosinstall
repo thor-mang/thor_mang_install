@@ -1,5 +1,5 @@
-- git: {local-name: src/thor_scripts, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_op_scripts.git', version: master}
-- git: {local-name: src/thor_mang_launch, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_mang_launch.git', version: master} 
+- git: {local-name: src/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: master}
+- git: {local-name: src/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: master} 
 - git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
 - git: {local-name: src/external/vigir_footstep_planning, uri: 'https://external.torcrobotics.com/vigir_footstep_planning.git', version: master}
 - git: {local-name: src/external/flor_common, uri: 'https://external.torcrobotics.com/flor_common.git', version: master}

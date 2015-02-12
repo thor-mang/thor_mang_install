@@ -1,7 +1,7 @@
-- git: {local-name: src/thor_mang/thor_mang_ros_control, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_op_ros_control.git', version: master}
+- git: {local-name: src/thor_mang/thor_mang_ros_control, uri: 'https://github.com/thor-mang/thor_mang_ros_control.git', version: master}
 - git: {local-name: src/thor_mang/thor_mang_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_op_libs.git', version: master}
 - git: {local-name: src/thor_mang/thor_mang_common, uri: 'git@git.sim.informatik.tu-darmstadt.de:kohlbrecher/thor_op_common.git', version: master}
-- git: {local-name: src/thor_mang/thor_mang_footstep_planner, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_mang_footstep_planner.git', version: master}
+- git: {local-name: src/thor_mang/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: master}
 - git: {local-name: src/thor_mang/thor_mang_force_torque_tools, uri: 'git@git.sim.informatik.tu-darmstadt.de:stumpf/thor_mang_force_torque_tools.git', version: master}
 - git: {local-name: src/external/dynamixel_pro_driver, uri: 'https://github.com/baxelrod/dynamixel_pro_driver.git', version: master}
 - git: {local-name: src/external/vigir_simple_joint_pan, uri: 'https://github.com/team-vigir/vigir_simple_joint_pan.git', version: master}

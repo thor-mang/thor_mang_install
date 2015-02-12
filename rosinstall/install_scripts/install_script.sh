@@ -98,7 +98,7 @@ echo
 
 # invoke make for the initial setup
 catkin_make cmake_check_build_system
-. $THOR_ROOT/src/thor_scripts/scripts/make.sh
+. $THOR_ROOT/src/thor_mang_scripts/scripts/make.sh
 echo
 
 . $THOR_ROOT/setup.bash
