@@ -1,4 +1,0 @@
-- git:
-    uri: https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git
-    local-name: src/external/hector_gazebo
-    version: indigo-devel

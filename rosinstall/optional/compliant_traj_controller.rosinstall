@@ -1,5 +1,0 @@
-- git:
-    uri: https://github.com/Martin-Oehler/compliant_joint_traj_controller.git
-    local-name: src/external/compliant_joint_trajectory_controller
-    version: master
-

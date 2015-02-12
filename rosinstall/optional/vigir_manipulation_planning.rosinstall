@@ -1,2 +1,0 @@
-- git: {local-name: src/external/vigir_planning_msgs, uri: 'https://github.com/team-vigir/vigir_planning_msgs.git', version: master}
-- git: {local-name: src/external/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: master}

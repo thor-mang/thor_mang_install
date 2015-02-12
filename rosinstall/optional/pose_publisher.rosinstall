@@ -1,4 +1,0 @@
-- git:
-    uri: https://git.sim.informatik.tu-darmstadt.de/oehler/tipposepublisher.git
-    local-name: src/external/tip_pose_publisher
-    version: master
