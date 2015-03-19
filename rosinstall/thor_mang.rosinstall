@@ -6,3 +6,8 @@
 - git: {local-name: src/thor_mang/thor_mang_force_torque_tools, uri: 'git@git.sim.informatik.tu-darmstadt.de:thorMangDev/thor_mang_force_torque_tools.git', version: master}
 - git: {local-name: src/external/dynamixel_pro_driver, uri: 'https://github.com/baxelrod/dynamixel_pro_driver.git', version: master}
 - git: {local-name: src/external/vigir_simple_joint_pan, uri: 'https://github.com/team-vigir/vigir_simple_joint_pan.git', version: master}
+- git: {local-name: src/external/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: hector}
+- git: {local-name: src/external/vigir_planning_msgs, uri: 'https://github.com/team-vigir/vigir_planning_msgs.git', version: master}
+- git: {local-name: src/external/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs.git', version: master}
+- git: {local-name: src/external/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
+- git: {local-name: src/external/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: support_multiple_collisions_geoms_per_link}
