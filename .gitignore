@@ -8,3 +8,4 @@ setup.bash
 src/
 stacks/
 scripts/
+rosinstall/optional/
