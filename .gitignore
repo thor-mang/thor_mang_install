@@ -9,3 +9,5 @@ src/
 stacks/
 scripts/
 rosinstall/optional/
+rosinstall/optional/custom
+
