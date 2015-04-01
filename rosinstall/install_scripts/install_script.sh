@@ -22,9 +22,6 @@ fi
 
 # install
 
-# make sure package dependencies are installed
-source $THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
-
 # delete old files
 echo Cleaning up old workspace files...
 for f in .rosinstall* devel build; do
@@ -56,6 +53,9 @@ if [ -z "$ROS_DISTRO" ]; then
     source /opt/ros/$ROS_DISTRO/setup.sh
     echo
 fi
+
+# make sure package dependencies are installed
+source $THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
 
 cat >setup.bash <<EOF
 #!/bin/bash
