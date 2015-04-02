@@ -25,7 +25,8 @@ ros-$ROS_DISTRO-moveit-planners-ompl \
 ros-$ROS_DISTRO-moveit-simple-controller-manager \
 ros-$ROS_DISTRO-ros-control \
 ros-$ROS_DISTRO-ros-controllers \
+ros-$ROS_DISTRO-camera-info-manager \
 ros-$ROS_DISTRO-urdfdom-py"
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
-
+i
