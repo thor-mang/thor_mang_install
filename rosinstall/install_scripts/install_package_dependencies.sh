@@ -29,4 +29,3 @@ ros-$ROS_DISTRO-camera-info-manager \
 ros-$ROS_DISTRO-urdfdom-py"
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
-i
