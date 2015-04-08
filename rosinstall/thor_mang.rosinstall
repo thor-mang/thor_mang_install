@@ -5,7 +5,7 @@
 - git: {local-name: src/thor_mang/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: master}
 - git: {local-name: src/thor_mang/thor_mang_force_torque_tools, uri: 'git@git.sim.informatik.tu-darmstadt.de:thorMangDev/thor_mang_force_torque_tools.git', version: master}
 - git: {local-name: src/vigir_simple_joint_pan, uri: 'https://github.com/team-vigir/vigir_simple_joint_pan.git', version: master}
-- git: {local-name: src/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: hector}
+- git: {local-name: src/vigir_manipulation_planning, uri: 'https://github.com/team-vigir/vigir_manipulation_planning.git', version: master}
 - git: {local-name: src/vigir_planning_msgs, uri: 'https://github.com/team-vigir/vigir_planning_msgs.git', version: master}
 - git: {local-name: src/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs.git', version: master}
 - git: {local-name: src/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
