@@ -65,7 +65,6 @@ fi
 echo "Installing snopt..."
 #sudo make FFLAGS="-O2 -fPIC" CFLAGS="-O2 -fPIC" CXXFLAGS="-O2 -fPIC -I${F2CINCLUDE}" install
 sudo cp lib/libsn* /usr/local/lib
-sudo ldconfig
 
 # setup library to be found by pkg-config
 sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/snopt_cpp.pc /usr/local/lib/pkgconfig

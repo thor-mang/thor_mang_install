@@ -26,10 +26,8 @@ echo "Found MATLAB installation: $MATLAB_ROOT"
 echo "Cloning Drake repositories ..."
 rm -Rf drake-distro
 git clone https://github.com/RobotLocomotion/drake-distro.git --recursive -b rigidbody
-cd drake-distro/drake
+cd drake-distro
 git pull origin master
-git checkout master
-cd ..
 
 echo "Installing dependencies ..."
 sudo apt-get update
