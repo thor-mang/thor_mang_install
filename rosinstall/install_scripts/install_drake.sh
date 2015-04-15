@@ -37,7 +37,8 @@ sudo ./install_prereqs.sh ubuntu
 
 echo "Building Drake distro"
 patch drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
-make
+BUILD_PREFIX="`pwd`/build" make
+unset BUILD_PREFIX
 cd ..
 
 echo "Setting up MATLAB paths"
