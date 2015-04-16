@@ -27,8 +27,8 @@ echo "Cloning Drake repositories ..."
 rm -Rf drake-distro
 git clone https://github.com/RobotLocomotion/drake-distro.git --recursive -b rigidbody
 cd drake-distro/drake
-git pull origin master
-git checkout master
+git pull origin master --recurse-submodules
+git submodule update --recursive
 cd ..
 
 echo "Installing dependencies ..."
