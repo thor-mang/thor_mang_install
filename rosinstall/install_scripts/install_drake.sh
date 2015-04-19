@@ -26,8 +26,10 @@ echo "Found MATLAB installation: $MATLAB_ROOT"
 echo "Cloning Drake repositories ..."
 rm -Rf drake-distro
 git clone https://github.com/RobotLocomotion/drake-distro.git --recursive -b rigidbody
-cd drake-distro
-git pull master
+cd drake-distro/drake
+git pull origin master --recurse-submodules
+git submodule update --recursive
+cd ..
 
 echo "Installing dependencies ..."
 sudo apt-get update
@@ -35,7 +37,8 @@ sudo ./install_prereqs.sh ubuntu
 
 echo "Building Drake distro"
 patch drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
-make
+BUILD_PREFIX="`pwd`/build" make
+unset BUILD_PREFIX
 cd ..
 
 echo "Setting up MATLAB paths"
