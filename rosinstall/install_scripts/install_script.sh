@@ -57,16 +57,6 @@ fi
 # make sure package dependencies are installed
 source $THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
 
-cat >setup.bash <<EOF
-#!/bin/bash
-# automated generated file
-. $THOR_ROOT/devel/setup.bash
-EOF
-
-if [ -n "$THOR_MANG_NO_SIM" ]; then
-    echo "export THOR_MANG_NO_SIM=1" >> setup.bash
-fi
-
 # initialize workspace
 if [ ! -f ".rosinstall" ]; then
     wstool init .
@@ -98,12 +88,22 @@ cp /opt/ros/$ROS_DISTRO/share/catkin/cmake/toplevel.cmake $THOR_ROOT/src/CMakeLi
 
 echo
 
+cat >setup.bash <<EOF
+#!/bin/bash
+# automated generated file
+. $THOR_ROOT/devel/setup.bash
+EOF
+
+if [ -n "$THOR_MANG_NO_SIM" ]; then
+    echo "export THOR_MANG_NO_SIM=1" >> setup.bash
+fi
+
+. $THOR_ROOT/setup.bash
+
 # invoke make for the initial setup
 catkin_make cmake_check_build_system
 . $THOR_ROOT/src/thor_mang_scripts/scripts/make.sh
 echo
-
-. $THOR_ROOT/setup.bash
 
 # Initialization successful. Print message and exit.
 cat <<EOF
