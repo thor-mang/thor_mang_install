@@ -27,6 +27,7 @@ ros-$ROS_DISTRO-ros-control \
 ros-$ROS_DISTRO-ros-controllers \
 ros-$ROS_DISTRO-camera-info-manager \
 ros-$ROS_DISTRO-moveit-commander \
-ros-$ROS_DISTRO-urdfdom-py"
+ros-$ROS_DISTRO-urdfdom-py \
+ros-$ROS_DISTRO-urg-node"
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
