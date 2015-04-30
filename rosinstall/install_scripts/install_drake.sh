@@ -11,17 +11,18 @@ cd ${ROOT_DIR}
 
 MATLAB_LINK=$(which matlab)
 
-if [ $MATLAB_LINK == "" ]
+if [ -z $MATLAB_LINK ]
 then
-  echo "No MATLAB installation found... Please install MATLAB first"
-  exit -1
+  echo "No MATLAB installation found..."
+else
+  # Find MATLAB path and create base dirs
+  MATLAB_EXECUTABLE=$(readlink "$MATLAB_LINK")
+  MATLAB_ROOT="$(dirname "$MATLAB_EXECUTABLE")/.."
+  MATLAB_ROOT=$(readlink -f $MATLAB_ROOT)
+  echo "Found MATLAB installation: $MATLAB_ROOT"
 fi
 
-# Find MATLAB path and create base dirs
-MATLAB_EXECUTABLE=$(readlink "$MATLAB_LINK")
-MATLAB_ROOT="$(dirname "$MATLAB_EXECUTABLE")/.."
-MATLAB_ROOT=$(readlink -f $MATLAB_ROOT)
-echo "Found MATLAB installation: $MATLAB_ROOT"
+
 
 echo "Cloning Drake repositories ..."
 rm -Rf drake-distro
@@ -41,15 +42,16 @@ BUILD_PREFIX="`pwd`/build" make
 unset BUILD_PREFIX
 cd ..
 
-echo "Setting up MATLAB paths"
-if ( ! [ -a "${MATLAB_ROOT}/toolbox/local/setup_drake_paths.m" ] ) 
-then
-  echo ''                                 | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
-  echo '% Add drake paths to environment' | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
-  echo 'setup_drake_paths'                | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
+if [ -n ${MATLAB_ROOT} ] then
+  echo "Setting up MATLAB paths"
+  if ( ! [ -a "${MATLAB_ROOT}/toolbox/local/setup_drake_paths.m" ] ) 
+  then
+    echo ''                                 | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
+    echo '% Add drake paths to environment' | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
+    echo 'setup_drake_paths'                | sudo tee --append $MATLAB_ROOT/toolbox/local/matlabrc.m > /dev/null
+  fi
+  sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/setup_drake_paths.m $MATLAB_ROOT/toolbox/local
 fi
-sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/setup_drake_paths.m $MATLAB_ROOT/toolbox/local
-
 
 echo "Done installing Drake components ...!"
 

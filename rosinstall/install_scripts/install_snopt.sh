@@ -24,7 +24,7 @@ patch -p1 < rosinstall/install_scripts/helper/snopt_7.2-8.patch
 
 MATLAB_LINK=$(which matlab)
 
-if [ $MATLAB_LINK == "" ]
+if [ -z $MATLAB_LINK ]
 then
   echo "No MATLAB installation found... "
 else
@@ -74,7 +74,7 @@ sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_cp
 sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_c.pc
 
 # setup MATLAB paths
-if ( ! [ $MATLAB_ROOT == "" ] )
+if [ -n $MATLAB_ROOT ] 
 then
   echo "Setting up MATLAB paths"
   
