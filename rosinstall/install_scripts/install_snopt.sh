@@ -38,6 +38,7 @@ MATLAB_LINK=$(which matlab)
 if [ -z $MATLAB_LINK ]
 then
   echo "No MATLAB installation found... "
+  rm -Rf snopt7/cmex
 else
   # Find MATLAB path and create base dirs
   MATLAB_EXECUTABLE=$(readlink "$MATLAB_LINK")
@@ -85,8 +86,10 @@ sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_cp
 sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_c.pc
 
 # setup MATLAB paths
-if [ -n $MATLAB_LINK ] 
+if [ -z $MATLAB_LINK ]
 then
+  echo "Setting up MATLAB paths not required"
+else
   echo "Setting up MATLAB paths"
   
   if ( ! [ -a "${MATLAB_ROOT}/toolbox/local/setup_snopt_paths.m" ] ) 
