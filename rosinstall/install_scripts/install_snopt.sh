@@ -11,6 +11,10 @@ echo "Installing SNOPT library ..."
 if [ -a snopt7.2-8.zip ]
 then 
   SNOPT_ARCHIVE=snopt7.2-8.zip
+  echo "Extracting $SNOPT_ARCHIVE ..."
+  rm -Rf snopt7
+  unzip $SNOPT_ARCHIVE
+  patch -p1 < rosinstall/install_scripts/helper/snopt_7.2-8.patch 
 else
   echo "Enter path to SNOPT archive (where snopt7.2-8.zip is stored)"
   read
