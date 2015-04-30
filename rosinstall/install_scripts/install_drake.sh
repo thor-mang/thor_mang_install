@@ -42,7 +42,10 @@ BUILD_PREFIX="`pwd`/build" make
 unset BUILD_PREFIX
 cd ..
 
-if [ -n ${MATLAB_ROOT} ] then
+if [ -z ${MATLAB_ROOT} ] 
+then
+  echo "Setting up MATLAB paths not required"
+else
   echo "Setting up MATLAB paths"
   if ( ! [ -a "${MATLAB_ROOT}/toolbox/local/setup_drake_paths.m" ] ) 
   then
