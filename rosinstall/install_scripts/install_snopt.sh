@@ -15,8 +15,9 @@ else
   echo "Enter path to SNOPT archive (where snopt7.2-8.zip is stored)"
   read
   
-  if [ -n ${REPLY} ] then
-    SNOPT_ARCHIVE="${REPLY}/snopt7.2-8.zip"
+  SNOPT_ARCHIVE="${REPLY}/snopt7.2-8.zip"
+  if [ -a $SNOPT_ARCHIVE ]
+  then    
     echo "Extracting $SNOPT_ARCHIVE ..."
     rm -Rf snopt7
     unzip $SNOPT_ARCHIVE
