@@ -14,13 +14,19 @@ then
 else
   echo "Enter path to SNOPT archive (where snopt7.2-8.zip is stored)"
   read
-  SNOPT_ARCHIVE="${REPLY}/snopt7.2-8.zip"
+  
+  if [ -n ${REPLY} ]
+    SNOPT_ARCHIVE="${REPLY}/snopt7.2-8.zip"
+    echo "Extracting $SNOPT_ARCHIVE ..."
+    rm -Rf snopt7
+    unzip $SNOPT_ARCHIVE
+    patch -p1 < rosinstall/install_scripts/helper/snopt_7.2-8.patch 
+  else
+    echo "No SNOPT archive entered. Trying to use existing directory"
+  fi
 fi
 
-echo "Extracting $SNOPT_ARCHIVE ..."
-rm -Rf snopt7
-unzip $SNOPT_ARCHIVE
-patch -p1 < rosinstall/install_scripts/helper/snopt_7.2-8.patch 
+
 
 MATLAB_LINK=$(which matlab)
 
@@ -74,7 +80,7 @@ sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_cp
 sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_c.pc
 
 # setup MATLAB paths
-if [ -n $MATLAB_ROOT ] 
+if [ -n $MATLAB_LINK ] 
 then
   echo "Setting up MATLAB paths"
   
