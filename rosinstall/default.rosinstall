@@ -1,7 +1,7 @@
 - git: {local-name: src/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: master}
 - git: {local-name: src/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: master} 
 - git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
-- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
-- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: master}
-- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
-- git: {local-name: src/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}
+- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: adaptive_planning}
+- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: adaptive_planning}
+- git: {local-name: src/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: adaptive_planning}
+- git: {local-name: src/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: adaptive_planning}
