@@ -1,11 +1,11 @@
 root_dir = getenv('VIGIR_ROOT_DIR');
 
 if ( isempty(root_dir) )
-  root_dir = getenv('THOR_ROOT_DIR');
+  root_dir = getenv('THOR_ROOT');
 end
 
 if ( isempty(root_dir) )
-  warning('Neither VIGIR_ROOT_DIR nor THOR_ROOT_DIR set: Not setting SNOPT paths');
+  warning('Neither VIGIR_ROOT_DIR nor THOR_ROOT set: Not setting SNOPT paths');
   return;
 end
 

@@ -10,7 +10,7 @@ echo $BASE_DIR
 echo "Installing TUD rosmatlab package ..."
 MATLAB_LINK=$(which matlab)
 
-if [ $MATLAB_LINK == "" ]
+if [ -z "$MATLAB_LINK" ]
 then
   echo "No MATLAB installation found... Please install MATLAB first"
   exit -1

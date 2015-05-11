@@ -6,7 +6,7 @@ ROOT_DIR=$(cd $THIS_DIR/../../..; pwd)
 ROSMATLAB_WS_PATH="$ROOT_DIR/rosmatlab" # path to your rosmatlab workspace
 
 MATLAB_LINK=$(which matlab)
-if [ $MATLAB_LINK == "" ]
+if [ -z "$MATLAB_LINK" ]
 then
   echo "No MATLAB installation found... Please install MATLAB and rosmatlab first"
   exit -1
