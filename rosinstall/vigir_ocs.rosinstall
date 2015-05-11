@@ -1,0 +1,17 @@
+- git:
+    uri: https://external.torcrobotics.com/vigir_ocs_common.git
+    local-name: src/vigir_ocs_common
+    version: master
+- git:
+    uri: https://external.torcrobotics.com/flor_rviz.git
+    local-name: src/flor_rviz
+    version: indigo-devel
+- git:
+    uri: https://external.torcrobotics.com/vigir_templates.git
+    local-name: src/vigir_templates
+    version: master
+- git: {local-name: src/vigir_interactive_marker_pose_server, uri: 'https://github.com/team-vigir/vigir_interactive_marker_pose_server.git', version: master}
+- git:
+    uri: https://external.torcrobotics.com/vigir_ocs_eui.git
+    local-name: src/vigir_ocs_eui
+    version: master

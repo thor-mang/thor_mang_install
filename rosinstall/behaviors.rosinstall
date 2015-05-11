@@ -1,0 +1,8 @@
+- git:
+    uri: https://external.torcrobotics.com/flor_smach_engine.git
+    local-name: src/vigir_smach_engine
+    version: master
+- git:
+    uri: https://external.torcrobotics.com/vigir_behaviors.git
+    local-name: src/vigir_behaviors
+    version: master
