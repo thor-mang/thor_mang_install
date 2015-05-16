@@ -19,6 +19,7 @@ ros-$ROS_DISTRO-octomap-msgs \
 ros-$ROS_DISTRO-octomap-ros \
 ros-$ROS_DISTRO-octomap-rviz-plugins \
 ros-$ROS_DISTRO-ompl \
+ros-$ROS_DISTRO-sbpl \
 ros-$ROS_DISTRO-moveit-ros \
 ros-$ROS_DISTRO-moveit-resources \
 ros-$ROS_DISTRO-moveit-planners-ompl \
