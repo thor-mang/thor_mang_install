@@ -1,7 +1,7 @@
 - git:
     uri: https://external.torcrobotics.com/vigir_ocs_common.git
     local-name: src/vigir_ocs_common
-    version: master
+    version: hector_head_control
 - git:
     uri: https://external.torcrobotics.com/flor_rviz.git
     local-name: src/flor_rviz
