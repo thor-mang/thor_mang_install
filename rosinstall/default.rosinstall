@@ -1,4 +1,4 @@
-- git: {local-name: src/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: master}
+- git: {local-name: src/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: package_moving}
 - git: {local-name: src/thor/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: master}
 - git: {local-name: src/vigir/flor_common, uri: 'https://external.torcrobotics.com/flor_common.git', version: master}
 - git: {local-name: src/vigir/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: support_multiple_collisions_geoms_per_link}
