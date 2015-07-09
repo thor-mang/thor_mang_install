@@ -2,5 +2,5 @@
 - git: {local-name: src/moveit/moveit_ros, uri: 'https://github.com/team-vigir/moveit_ros.git', version: add_cubic}
 - git: {local-name: src/moveit/moveit_msgs, uri: 'https://github.com/team-vigir/moveit_msgs.git', version: indigo-devel}
 - git: {local-name: src/moveit/moveit_planners, uri: 'https://github.com/team-vigir/moveit_planners.git', version: indigo-devel}
-- git: {local-name: src/vigir_geometric_shapes, uri: 'https://github.com/team-vigir/geometric_shapes.git', version: indigo-devel}
+- git: {local-name: src/vigir/vigir_geometric_shapes, uri: 'https://github.com/team-vigir/geometric_shapes.git', version: indigo-devel}
 

@@ -1,12 +1,12 @@
 - git:
     uri: https://github.com/team-vigir/executive_smach.git
-    local-name: src/executive_smach
+    local-name: src/vigir/executive_smach
     version: indigo-devel
 - git:
     uri: https://external.torcrobotics.com/flor_smach_engine.git
-    local-name: src/vigir_smach_engine
+    local-name: src/vigir/vigir_smach_engine
     version: master
 - git:
     uri: https://external.torcrobotics.com/vigir_behaviors.git
-    local-name: src/vigir_behaviors
+    local-name: src/vigir/vigir_behaviors
     version: master
