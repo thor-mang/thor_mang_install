@@ -9,7 +9,7 @@ if ( isempty(root_dir) )
   return;
 end
 
-drake_base_path = [root_dir '/drake-distro'];
+drake_base_path = [root_dir '/src/external/drake-distro'];
 
 if ( ~exist(drake_base_path,'dir') )
   warning('There does not seem to be a Drake installation in your ROOT_DIR. Not setting Drake paths');

@@ -1,11 +1,15 @@
 #!/bin/bash
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
-BASE_DIR=$(cd $THIS_DIR/../..; pwd)
-cd ${BASE_DIR}
+ROOT_DIR=$(cd $THIS_DIR/../..; pwd)
 
-echo "Base directory is"
-echo $BASE_DIR
+ROSMATLAB_BASE_DIR="${ROOT_DIR}/src/external"
+ROSMATLAB_DIR="${ROSMATLAB_BASE_DIR}/rosmatlab"
+mkdir -p $ROSMATLAB_BASE_DIR
+cd $ROSMATLAB_BASE_DIR
+
+echo "Target directory is"
+echo $ROSMATLAB_DIR
 
 echo "Installing TUD rosmatlab package ..."
 MATLAB_LINK=$(which matlab)
@@ -45,7 +49,7 @@ else
   if [ "$BOOST_VERSION_MAJOR.$BOOST_VERSION_MINOR.$BOOST_VERSION_REVISION" == "1.49.0" ]
   then 
     echo "This Boost version needs patching..."
-    patch -p1 < ${BASE_DIR}/rosinstall/install_scripts/helper/boost_1_49_0_xtime.patch
+    patch -p1 < ${ROOT_DIR}/rosinstall/install_scripts/helper/boost_1_49_0_xtime.patch
   fi
   
   echo "Ready to build ..."
@@ -61,13 +65,16 @@ else
   echo "rosinstall_generator installation done"
   
   # install ROS for MATLAB (start with clean environment to ignore existing ROS installation 
-  env -i ${BASE_DIR}/rosinstall/install_scripts/helper/install_rosmatlab_helper.sh ${MATLAB_ROOT} ${BASE_DIR}
+  env -i ${ROOT_DIR}/rosinstall/install_scripts/helper/install_rosmatlab_helper.sh ${MATLAB_ROOT} ${ROOT_DIR}
   
   # add MATLAB root to .bashrc
   echo "export MATLAB_ROOT=$MATLAB_ROOT" >> $HOME/.bashrc
   
-  cd $BASE_DIR
+  cd $ROOT_DIR
 fi
+
+# keep THOR catkin from interfering
+touch $ROSMATLAB_DIR/CATKIN_IGNORE
 
 echo "Done installing rosmatlab components ...!"
 

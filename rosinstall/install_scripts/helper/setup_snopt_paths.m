@@ -9,7 +9,7 @@ if ( isempty(root_dir) )
   return;
 end
 
-snopt_base_path = [root_dir '/snopt7'];
+snopt_base_path = [root_dir '/src/external/snopt7'];
 
 if ( ~exist(snopt_base_path,'dir') )
   warning('There does not seem to be a SNOPT installation in your ROOT_DIR. Not setting SNOPT paths');

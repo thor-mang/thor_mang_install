@@ -7,7 +7,10 @@ echo "Install Drake distribution and dependencies ..."
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT_DIR=$(cd $THIS_DIR/../..; pwd)
-cd ${ROOT_DIR}
+
+DRAKE_BASE_DIR="${ROOT_DIR}/src/external"
+DRAKE_DIR="${DRAKE_BASE_DIR}/drake-distro"
+cd ${DRAKE_BASE_DIR}
 
 MATLAB_LINK=$(which matlab)
 
@@ -55,6 +58,9 @@ else
   fi
   sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/setup_drake_paths.m $MATLAB_ROOT/toolbox/local
 fi
+
+# keep THOR catkin from interfering
+touch $DRAKE_DIR/CATKIN_IGNORE
 
 echo "Done installing Drake components ...!"
 

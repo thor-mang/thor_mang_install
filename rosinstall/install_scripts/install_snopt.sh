@@ -5,9 +5,14 @@ echo $PWD
 
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT_DIR=$(cd $THIS_DIR/../..; pwd)
-cd ${ROOT_DIR}
+
+SNOPT_BASE_DIR="${ROOT_DIR}/src/external"
+SNOPT_DIR="${SNOPT_BASE_DIR}/snopt7"
+mkdir -p $SNOPT_BASE_DIR
+cd $SNOPT_BASE_DIR
 
 echo "Installing SNOPT library ..."
+echo "Target folder: ${SNOPT_DIR}" 
 if [ -a snopt7.2-8.zip ]
 then 
   SNOPT_ARCHIVE=snopt7.2-8.zip
@@ -25,7 +30,7 @@ else
     echo "Extracting $SNOPT_ARCHIVE ..."
     rm -Rf snopt7
     unzip $SNOPT_ARCHIVE
-    patch -p1 < rosinstall/install_scripts/helper/snopt_7.2-8.patch 
+    patch -p1 < ${ROOT_DIR}/rosinstall/install_scripts/helper/snopt_7.2-8.patch 
   else
     echo "No SNOPT archive entered. Trying to use existing directory"
   fi
@@ -82,8 +87,8 @@ sudo ldconfig
 # setup library to be found by pkg-config
 sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/snopt_cpp.pc /usr/local/lib/pkgconfig
 sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/snopt_cpp.pc /usr/local/lib/pkgconfig/snopt_c.pc
-sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_cpp.pc
-sudo sed -i "1s|.*|prefix=${ROOT_DIR}/snopt7|" /usr/local/lib/pkgconfig/snopt_c.pc
+sudo sed -i "1s|.*|prefix=${SNOPT_DIR}|" /usr/local/lib/pkgconfig/snopt_cpp.pc
+sudo sed -i "1s|.*|prefix=${SNOPT_DIR}|" /usr/local/lib/pkgconfig/snopt_c.pc
 
 # setup MATLAB paths
 if [ -z $MATLAB_LINK ]
@@ -100,6 +105,9 @@ else
   fi
   sudo cp ${ROOT_DIR}/rosinstall/install_scripts/helper/setup_snopt_paths.m $MATLAB_ROOT/toolbox/local
 fi
+
+# keep THOR catkin from interfering
+touch $SNOPT_DIR/CATKIN_IGNORE
 
 echo "Done installing SNOPT components ..."
 

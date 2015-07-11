@@ -2,7 +2,8 @@
 
 # get parameters from parent script
 MATLAB_ROOT=$1
-BASE_DIR=$2
+ROOT_DIR=$2
+ROSMATLAB_BASE_DIR="${ROOT_DIR}/src/external"
 
 # install ROS
 echo "Installing ROS for MATLAB ..."
@@ -12,7 +13,7 @@ rm -Rf src
 wstool init src
 rosinstall_generator --deps --rosdistro indigo ros_comm common_msgs geometry | wstool merge -t src -
 wstool update -t src
-patch src/ros_comm/rosbag/src/recorder.cpp < ${BASE_DIR}/rosinstall/install_scripts/helper/rosmatlab_recorder_xtime.patch  
+patch src/ros_comm/rosbag/src/recorder.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/rosmatlab_recorder_xtime.patch  
 ./src/catkin/bin/catkin_make_isolated --install --install-space ${MATLAB_ROOT}/ros/indigo -DBoost_NO_SYSTEM_PATHS=ON -DBOOST_ROOT=${MATLAB_ROOT}/ros/indigo
 touch src/CATKIN_IGNORE
 source $MATLAB_ROOT/ros/indigo/setup.bash
@@ -20,7 +21,7 @@ echo "ROS installation finished"
   
 # install actual rosmatlab package
 echo "Installing rosmatlab package"
-cd $BASE_DIR
+cd $ROSMATLAB_BASE_DIR
 rm -Rf rosmatlab
 mkdir rosmatlab
 cd rosmatlab

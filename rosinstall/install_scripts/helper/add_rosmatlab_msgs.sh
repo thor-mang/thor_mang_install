@@ -3,7 +3,7 @@
 THIS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 ROOT_DIR=$(cd $THIS_DIR/../../..; pwd)
 
-ROSMATLAB_WS_PATH="${ROOT_DIR}/rosmatlab"
+ROSMATLAB_WS_PATH="${ROOT_DIR}/src/external/rosmatlab"
 CURRENT_PATH=`pwd`
 
 # argument parsing
