@@ -102,7 +102,7 @@ fi
 
 # invoke make for the initial setup
 catkin_make cmake_check_build_system
-export THOR_SCRIPTS=$THOR_ROOT/src/thor/thor_mang_scripts
+export THOR_SCRIPTS=$THOR_ROOT/src/thor/thor_mang_scripts/scripts
 . $THOR_ROOT/src/thor/thor_mang_scripts/scripts/make.sh
 echo
 
