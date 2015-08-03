@@ -11,4 +11,5 @@ stacks/
 scripts/
 rosinstall/optional/
 rosinstall/optional/custom
+.catkin_tools
 
