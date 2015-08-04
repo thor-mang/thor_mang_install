@@ -99,10 +99,10 @@ if [ -n "$THOR_MANG_NO_SIM" ]; then
     echo "export THOR_MANG_NO_SIM=1" >> setup.bash
 fi
 
-. $THOR_ROOT/setup.bash
+#. $THOR_ROOT/setup.bash
 
 # invoke make for the initial setup
-catkin_make cmake_check_build_system
+#catkin_make cmake_check_build_system
 export THOR_SCRIPTS=$THOR_ROOT/src/thor/thor_mang_scripts/scripts
 . $THOR_ROOT/src/thor/thor_mang_scripts/scripts/make.sh
 echo
@@ -118,7 +118,7 @@ You can setup your current shell's environment by entering
 
 or by adding this command to your .bashrc file for automatic setup on each invocation of an interactive shell:
 
-    echo "source $THOR_ROOT/setup.bash >> ~/.bashrc"
+    echo "source $THOR_ROOT/setup.bash" >> ~/.bashrc
 
 You can also modify your workspace config (e.g. for adding additional repositories or
 packages) using the wstool command.
