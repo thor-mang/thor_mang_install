@@ -8,6 +8,7 @@ mercurial \
 git \
 python-rosdep \
 python-wstool \
+python-catkin-tools \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-serial \
 ros-$ROS_DISTRO-hector-slam \

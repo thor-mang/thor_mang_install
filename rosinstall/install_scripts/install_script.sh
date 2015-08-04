@@ -91,6 +91,7 @@ echo
 cat >setup.bash <<EOF
 #!/bin/bash
 # automated generated file
+export THOR_ROOT=$THOR_ROOT
 . $THOR_ROOT/devel/setup.bash
 EOF
 
