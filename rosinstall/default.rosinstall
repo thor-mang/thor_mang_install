@@ -16,6 +16,7 @@
 - git: {local-name: src/vigir_sandbox, uri: 'https://external.torcrobotics.com/vigir_sandbox.git', version: obfsm}
 - git: {local-name: src/biped_state_estimator, uri: 'https://github.com/thor-mang/biped_state_estimator.git', version: master}
 - git: {local-name: src/external/vigir_grasp_msgs, uri: 'https://github.com/team-vigir/vigir_grasp_msgs.git', version: master}
+- git: {local-name: src/vigir/vigir_templates, uri: 'https://github.com/team-vigir/vigir_templates.git', version: master}
 - git: {local-name: src/external/vigir_object_template_msgs, uri: 'https://github.com/team-vigir/vigir_object_template_msgs.git', version: master}
 - git: {local-name: src/external/vigir_utilities, uri: 'https://github.com/team-vigir/vigir_utilities.git', version: master}
 - git: {local-name: src/external/vigir_teleop_planning_msgs, uri: 'https://github.com/team-vigir/vigir_teleop_planning_msgs.git', version: master}
