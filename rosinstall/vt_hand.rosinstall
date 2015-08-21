@@ -1,1 +1,1 @@
-- git: {local-name: src/thor_vt_hand_common, uri: 'git@git.sim.informatik.tu-darmstadt.de:thorMangDev/thor_vt_hand_common.git', version: master}
+- git: {local-name: src/thor_vt_hand_common, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_vt_hand_common.git', version: master}
