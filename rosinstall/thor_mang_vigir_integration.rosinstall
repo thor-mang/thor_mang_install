@@ -1,4 +1,6 @@
 - git: {local-name: src/thor/thor_mang_vigir_integration, uri: 'https://github.com/thor-mang/thor_mang_vigir_integration.git', version: master}
 - git: {local-name: src/vigir/vigir_humanoid_control_msgs, uri: 'https://github.com/team-vigir/vigir_humanoid_control_msgs.git', version: master}
+- git: {local-name: src/vigir/vigir_control_msgs, uri: 'https://github.com/team-vigir/vigir_control_msgs.git', version: master}
+
 
 
