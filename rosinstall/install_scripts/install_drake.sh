@@ -40,7 +40,7 @@ sudo apt-get update
 sudo ./install_prereqs.sh ubuntu
 
 echo "Building Drake distro"
-patch drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
+patch drake/drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
 BUILD_PREFIX="`pwd`/build" make
 unset BUILD_PREFIX
 cd ..
