@@ -34,6 +34,7 @@ ros-$ROS_DISTRO-urg-node \
 ros-$ROS_DISTRO-keyboard \
 ros-$ROS_DISTRO-joy \
 ros-$ROS_DISTRO-laser-filters \
-ros-$ROS_DISTRO-pcl-ros"
+ros-$ROS_DISTRO-pcl-ros
+ros-$ROS_DISTRO-gazebo-plugins"
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
