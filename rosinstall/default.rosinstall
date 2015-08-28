@@ -15,7 +15,7 @@
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: master}
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}
-#- git: {local-name: src/vigir/vigir_sandbox, uri: 'https://external.torcrobotics.com/vigir_sandbox.git', version: obfsm}
+- git: {local-name: src/vigir/vigir_onboard_footstep_manager, uri: 'https://github.com/team-vigir/vigir_onboard_footstep_manager.git', version: master}
 - git: {local-name: src/biped_state_estimator, uri: 'https://github.com/thor-mang/biped_state_estimator.git', version: master}
 - git: {local-name: src/vigir/vigir_grasp_msgs, uri: 'https://github.com/team-vigir/vigir_grasp_msgs.git', version: master}
 - git: {local-name: src/vigir/vigir_templates, uri: 'https://github.com/team-vigir/vigir_templates.git', version: master}
