@@ -29,18 +29,29 @@ fi
 
 echo "Cloning Drake repositories ..."
 rm -Rf drake-distro
-git clone https://github.com/RobotLocomotion/drake-distro.git --recursive -b rigidbody
-cd drake-distro/drake
-git pull origin master --recurse-submodules
-git submodule update --recursive
-cd ..
+git clone https://github.com/RobotLocomotion/drake.git drake-distro
+cd drake-distro
+make configure
+cmake -C ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_cmake_cache.txt pod-build   
+make download-all
 
 echo "Installing dependencies ..."
 sudo apt-get update
 sudo ./install_prereqs.sh ubuntu
 
 echo "Building Drake distro"
-patch drake/drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
+patch drake/solvers/NonlinearProgramSnoptmex.cpp < ${ROOT_DIR}/rosinstall/install_scripts/helper/drake_snopt.patch
+
+git checkout master
+git pull
+
+cd externals/director
+git checkout master
+git pull
+cd ../..
+
+read -p "Press [Enter] key to start make..."
+
 BUILD_PREFIX="`pwd`/build" make
 unset BUILD_PREFIX
 cd ..
