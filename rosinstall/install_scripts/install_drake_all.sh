@@ -16,6 +16,7 @@ echo "============================"
 echo "Installing ROSMATLAB messages"
 echo "============================"
 ${ROOT_DIR}/rosinstall/install_scripts/helper/add_rosmatlab_msgs.sh moveit_msgs
+${ROOT_DIR}/rosinstall/install_scripts/helper/add_rosmatlab_msgs.sh control_msgs
 ${ROOT_DIR}/rosinstall/install_scripts/helper/add_rosmatlab_msgs.sh octomap_msgs
 ${ROOT_DIR}/rosinstall/install_scripts/helper/add_rosmatlab_msgs.sh object_recognition_msgs
 ${ROOT_DIR}/rosinstall/install_scripts/helper/add_rosmatlab_msgs.sh vigir_planning_msgs
