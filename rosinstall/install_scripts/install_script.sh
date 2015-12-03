@@ -88,10 +88,10 @@ cp /opt/ros/$ROS_DISTRO/share/catkin/cmake/toplevel.cmake $THOR_ROOT/src/CMakeLi
 
 echo
 
+# generate top-level setup.bash
 cat >setup.bash <<EOF
 #!/bin/bash
 # automated generated file
-export THOR_ROOT=$THOR_ROOT
 . $THOR_ROOT/devel/setup.bash
 EOF
 
@@ -99,7 +99,7 @@ if [ -n "$THOR_MANG_NO_SIM" ]; then
     echo "export THOR_MANG_NO_SIM=1" >> setup.bash
 fi
 
-#. $THOR_ROOT/setup.bash
+. $THOR_ROOT/setup.bash
 
 # invoke make for the initial setup
 #catkin_make cmake_check_build_system
