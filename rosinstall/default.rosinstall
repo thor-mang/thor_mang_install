@@ -1,0 +1,2 @@
+- git: {local-name: src/thor/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: thormang3}
+- git: {local-name: src/thor/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: thormang3}
