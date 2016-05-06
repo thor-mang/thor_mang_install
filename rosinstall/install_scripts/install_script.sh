@@ -2,17 +2,6 @@
 
 cd $THOR_ROOT
 
-# parse parameters
-while [ -n "$1" ]; do
-    case $1 in
-    --no_sim)
-        THOR_MANG_NO_SIM=1
-        ;;
-    esac
-
-    shift
-done
-
 if [ -z "$THOR_ROOT" ]; then
     THOR_ROOT=$(cd `dirname $0`; pwd)
 fi
@@ -65,12 +54,8 @@ fi
 # merge rosinstall files from rosinstall/*.rosinstall
 for file in $THOR_ROOT/rosinstall/*.rosinstall; do
     filename=$(basename ${file%.*})
-    if [ -n "$THOR_MANG_NO_SIM" ] && [ $filename == "thor_mang_simulation" ]; then
-        continue;
-    else
-        echo "Merging to workspace: '$filename'.rosinstall"
-        wstool merge $file -y
-    fi
+    echo "Merging to workspace: '$filename'.rosinstall"
+    wstool merge $file -y
 done
 echo
 
@@ -94,10 +79,6 @@ cat >setup.bash <<EOF
 # automated generated file
 . $THOR_ROOT/devel/setup.bash
 EOF
-
-if [ -n "$THOR_MANG_NO_SIM" ]; then
-    echo "export THOR_MANG_NO_SIM=1" >> setup.bash
-fi
 
 . $THOR_ROOT/setup.bash
 
