@@ -30,7 +30,7 @@ if [ -z "$ROS_DISTRO" ]; then
     done
 
     if [ "$_distro" = "ask" ]; then
-        echo -n "Which ROS distro you want to setup this workspace for ($_ROS_DISTROS)? "
+        echo -n "Which ROS distro you want to setup this workspace for ($_ROS_DISTROS)?"
         read ROS_DISTRO
     fi
 

@@ -1,0 +1,6 @@
+- git: {local-name: src/thor/robotis/common, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Common.git', version: devel_indigo}
+- git: {local-name: src/thor/robotis/framework, uri: 'https://github.com/thor-mang/ROBOTIS-Framework.git', version: devel_indigo}
+- git: {local-name: src/thor/robotis/tools, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Tools.git', version: devel_indigo}
+- git: {local-name: src/thor/robotis/opc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-OPC.git', version: devel_indigo}
+- git: {local-name: src/thor/robotis/mpc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-MPC.git', version: devel_indigo}
+- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: devel_indigo}
