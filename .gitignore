@@ -5,6 +5,7 @@
 .ssh/
 build/
 devel/
+logs/
 setup.bash
 src/
 stacks/
