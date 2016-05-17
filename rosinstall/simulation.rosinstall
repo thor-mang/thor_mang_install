@@ -1,5 +1,0 @@
-- git: {
-  local-name: src/thor/thor_mang_simulation, 
-  uri: 'https://github.com/thor-mang/thor_mang_simulator.git', 
-  version: thormang3
-}
