@@ -1,0 +1,98 @@
+# OCS/UI    
+- git:
+   uri: https://github.com/team-vigir/vigir_interactive_marker_pose_server.git
+   local-name: src/vigir/vigir_interactive_marker_pose_server
+   version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_ocs_common.git
+    local-name: src/vigir/vigir_ocs_common
+    version: new_template_msg
+- git:
+    uri: https://github.com/team-vigir/vigir_rqt.git
+    local-name: src/vigir/vigir_rqt
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_rviz.git
+    local-name: src/vigir/vigir_rviz
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_ocs_msgs.git
+    local-name: src/vigir/vigir_ocs_msgs
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_manipulation_planning.git
+    local-name: src/vigir/vigir_manipulation_planning
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_planning_msgs.git
+    local-name: src/vigir/vigir_planning_msgs
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_teleop_planning_msgs.git
+    local-name: src/vigir/vigir_teleop_planning_msgs
+    version: master
+- git:
+   uri: https://github.com/team-vigir/vigir_perception_msgs
+   local-name: src/vigir/vigir_perception_msgs
+   version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_generic_params.git
+    local-name: src/vigir/vigir_generic_params
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_pluginlib.git
+    local-name: src/vigir/vigir_pluginlib
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_footstep_planning_msgs.git
+    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_footstep_planning_basics.git
+    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_footstep_planning_core.git
+    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_terrain_classifier.git
+    local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier
+    version: master
+- git:
+    uri: https://github.com/team-vigir/flexbe_behavior_engine.git
+    local-name: src/vigir/flexbe_behavior_engine
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_behaviors.git
+    local-name: src/vigir/vigir_behaviors
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_behavior_synthesis.git
+    local-name: src/vigir/vigir_behavior_synthesis
+    version: master
+- git:
+    uri: https://github.com/team-vigir/ReSpeC.git
+    local-name: src/ReSpeC
+    version: master
+- git:
+    uri: https://github.com/team-vigir/executive_smach.git
+    local-name: src/executive_smach
+    version: indigo-devel
+- git:
+    uri: https://github.com/team-vigir/vigir_control_msgs.git
+    local-name: src/vigir/vigir_control_msgs
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_utilities.git
+    local-name: src/vigir/vigir_utilities
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_object_template_msgs.git
+    local-name: src/vigir/vigir_object_template_msgs
+    version: remove_dependencies
+
+
+
+
+
