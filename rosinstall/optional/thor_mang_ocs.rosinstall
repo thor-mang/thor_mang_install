@@ -92,6 +92,23 @@
     local-name: src/vigir/vigir_object_template_msgs
     version: remove_dependencies
 
+#perception
+- git:
+    uri: https://github.com/team-vigir/robot_self_filter.git
+    local-name: src/external/robot_self_filter
+    version: support_multiple_collisions_geoms_per_link
+- git:
+   uri: https://github.com/team-vigir/vigir_lidar_proc
+   local-name: src/vigir/vigir_lidar_proc
+   version: master    
+- git:
+   uri: https://github.com/team-vigir/vigir_perception
+   local-name: src/vigir/vigir_perception
+   version: master
+
+
+
+
 
 
 
