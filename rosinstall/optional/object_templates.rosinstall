@@ -2,11 +2,11 @@
 - git:
     uri: https://github.com/team-vigir/vigir_templates.git
     local-name: src/vigir/vigir_templates
-    version: renamed_folders
+    version: thormang3
 - git:
     uri: https://github.com/team-vigir/vigir_object_template_manager.git
     local-name: src/vigir/vigir_object_template_manager
-    version: remove_dependencies
+    version: thormang3
 - git:
     uri: https://github.com/team-vigir/vigir_object_template_msgs.git
     local-name: src/vigir/vigir_object_template_msgs

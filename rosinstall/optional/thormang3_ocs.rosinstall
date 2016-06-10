@@ -6,7 +6,7 @@
 - git:
     uri: https://github.com/team-vigir/vigir_ocs_common.git
     local-name: src/vigir/vigir_ocs_common
-    version: hector_head_control
+    version: new_template_msg
 - git:
     uri: https://github.com/team-vigir/vigir_rqt.git
     local-name: src/vigir/vigir_rqt

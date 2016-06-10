@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#cd $WORKSPACE_ROOT
+#cd $THOR_ROOT
 
-if [ -z $WORKSPACE_ROOT ]; then
-  echo "Variable WORKSPACE_ROOT not set, make sure the workspace is set up properly!"
+if [ -z $THOR_ROOT ]; then
+  echo "Variable THOR_ROOT not set, make sure the workspace is set up properly!"
 else
-  echo "Installing onboard software..."
+  echo "Installing ocs software..."
   
-  cd $WORKSPACE_ROOT
+  cd $THOR_ROOT
   
   # Common pkgs
   wstool merge rosinstall/optional/common_msgs.rosinstall
@@ -16,6 +16,7 @@ else
   
   # Manipulation planning
 #  wstool merge rosinstall/optional/moveit.rosinstall
+  wstool merge rosinstall/optional/moveit_planning.rosinstall
   wstool merge rosinstall/optional/manipulation_planning.rosinstall  
   wstool merge rosinstall/optional/object_templates.rosinstall
     

@@ -10,7 +10,7 @@
 - git:
    uri: https://github.com/team-vigir/vigir_object_template_msgs.git
    local-name: src/vigir/vigir_object_template_msgs
-   version: master
+   version: remove_dependencies
 - git:
    uri: https://github.com/team-vigir/vigir_perception_msgs
    local-name: src/vigir/vigir_perception_msgs

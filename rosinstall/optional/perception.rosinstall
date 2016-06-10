@@ -10,4 +10,4 @@
 - git:
    uri: https://github.com/team-vigir/vigir_perception
    local-name: src/vigir/vigir_perception
-   version: master
+   version: thormang3
