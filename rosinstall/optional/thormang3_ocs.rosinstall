@@ -6,7 +6,7 @@
 - git:
     uri: https://github.com/team-vigir/vigir_ocs_common.git
     local-name: src/vigir/vigir_ocs_common
-    version: new_template_msg
+    version: thormang3
 - git:
     uri: https://github.com/team-vigir/vigir_rqt.git
     local-name: src/vigir/vigir_rqt
