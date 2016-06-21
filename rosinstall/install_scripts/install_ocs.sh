@@ -12,6 +12,7 @@ else
   # Common pkgs
   wstool merge rosinstall/optional/common_msgs.rosinstall
   wstool merge rosinstall/optional/utilities.rosinstall
+  wstool merge rosinstall/optional/biped_state_estimator.rosinstall
 #  wstool merge rosinstall/optional/launch.rosinstall
   
   # Manipulation planning
