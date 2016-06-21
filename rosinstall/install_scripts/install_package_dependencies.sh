@@ -38,6 +38,7 @@ ros-$ROS_DISTRO-driver-base \
 ros-$ROS_DISTRO-pcl-ros \
 ros-$ROS_DISTRO-theora-image-transport \
 ros-$ROS_DISTRO-diagnostics \
-ros-$ROS_DISTRO-uvc-camera "
+ros-$ROS_DISTRO-uvc-camera \
+ros-$ROS_DISTRO-geodesy "
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
