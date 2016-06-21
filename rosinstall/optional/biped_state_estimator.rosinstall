@@ -1,0 +1,3 @@
+# Simple biped state estimator
+- git: {local-name: src/thor/biped_state_estimator, uri: 'https://github.com/thor-mang/biped_state_estimator.git', version: master}
+- git: {local-name: src/thor/robot_transforms, uri: 'https://github.com/hector-humanoid/robot_transforms.git', version: master}
