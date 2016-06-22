@@ -25,6 +25,9 @@ else
   wstool merge rosinstall/optional/perception.rosinstall
   wstool merge rosinstall/optional/footstep_planning.rosinstall  
 
+  # Perception, footstep planning
+  wstool merge rosinstall/optional/vt_hands_controller.rosinstall
+
   # Common pkgs
   wstool merge rosinstall/optional/thormang3_ocs.rosinstall
   wstool merge rosinstall/optional/behavior_control.rosinstall
