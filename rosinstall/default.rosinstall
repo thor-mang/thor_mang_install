@@ -1,5 +1,21 @@
+# system
 - git: {local-name: src/thor/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: thormang3}
 - git: {local-name: src/thor/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: thormang3}
 - git: {local-name: src/thor/thor_mang_common, uri: 'https://github.com/thor-mang/thor_mang_common.git', version: thormang3}
+
+# hardware drivers
 - git: {local-name: src/microstrain_3dm_gx3_45, uri: 'https://github.com/thor-mang/microstrain_3dm_gx3_45.git', version: master}
+
+# common packages   
 - git: {local-name: src/hector_models, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_models.git', version: thormang3}
+- git: {local-name: src/vigir/vigir_generic_params, uri: 'https://github.com/team-vigir/vigir_generic_params.git', version: master}
+- git: {local-name: src/vigir/vigir_pluginlib, uri: 'https://github.com/team-vigir/vigir_pluginlib.git', version: master}
+
+# walking
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: master}
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
+- git: {local-name: src/vigir/vigir_walk_control, uri: 'https://github.com/team-vigir/vigir_walk_control', version: master}
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: thormang3}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: thormang3}
