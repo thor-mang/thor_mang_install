@@ -5,7 +5,7 @@
 if [ -z $THOR_ROOT ]; then
   echo "Variable THOR_ROOT not set, make sure the workspace is set up properly!"
 else
-  echo "Installing ocs software..."
+  echo "Installing onboard software..."
   
   cd $THOR_ROOT
   
