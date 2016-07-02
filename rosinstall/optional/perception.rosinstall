@@ -6,7 +6,7 @@
 - git:
    uri: https://github.com/team-vigir/vigir_lidar_proc
    local-name: src/vigir/vigir_lidar_proc
-   version: master    
+   version: master
 - git:
    uri: https://github.com/team-vigir/vigir_perception
    local-name: src/vigir/vigir_perception

@@ -3,3 +3,7 @@
    uri: https://github.com/team-vigir/vigir_manipulation_planning.git
    local-name: src/vigir/vigir_manipulation_planning
    version: thormang3
+- git:
+    uri: https://github.com/team-vigir/vigir_perception_msgs
+    local-name: src/vigir/vigir_perception_msgs
+    version: master
