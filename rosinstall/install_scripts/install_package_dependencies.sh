@@ -40,8 +40,10 @@ ros-$ROS_DISTRO-theora-image-transport \
 ros-$ROS_DISTRO-diagnostics \
 ros-$ROS_DISTRO-uvc-camera \
 ros-$ROS_DISTRO-shape-tools \
-ros-$ROS_DISTRO-geodesy \
 ros-$ROS_DISTRO-openni2-camera \
-ros-$ROS_DISTRO-openni2-launch "
+ros-$ROS_DISTRO-openni2-launch \
+ros-$ROS_DISTRO-geodesy \
+ros-$ROS_DISTRO-qt-build \
+ros-$ROS_DISTRO-humanoid-nav-msgs "
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
