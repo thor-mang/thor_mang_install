@@ -1,0 +1,8 @@
+# Plugin/Object templates
+- git:
+    uri: https://github.com/thor-mang/object_template_alignment_plugin.git
+    local-name: src/object_template_alignment_plugin
+    version: master
+
+
+
