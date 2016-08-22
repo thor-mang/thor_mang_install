@@ -26,11 +26,11 @@ else
   wstool merge rosinstall/optional/footstep_planning.rosinstall  
 
   # Perception, footstep planning
-  wstool merge rosinstall/optional/vt_hands_controller.rosinstall
+#  wstool merge rosinstall/optional/vt_hands_controller.rosinstall
 
   # Common pkgs
   wstool merge rosinstall/optional/thormang3_ocs.rosinstall
-  wstool merge rosinstall/optional/behavior_control.rosinstall
+#  wstool merge rosinstall/optional/behavior_control.rosinstall
  
   # Optionally check if update is requested. Not doing update saves some
   # time when called from other scripts
