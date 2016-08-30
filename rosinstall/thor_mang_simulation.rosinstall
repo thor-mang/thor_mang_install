@@ -1,2 +1,2 @@
-- git: {local-name: src/thor/thor_mang_simulation, uri: 'https://github.com/thor-mang/thor_mang_simulator.git', version: master}
+- git: {local-name: src/thor/thor_mang_simulation, uri: 'https://github.com/thor-mang/thor_mang_simulator.git', version: thormang1}
 - git: {local-name: src/external/hector_gazebo, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_gazebo.git', version: indigo-devel}
