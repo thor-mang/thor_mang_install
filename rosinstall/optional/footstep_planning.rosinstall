@@ -30,7 +30,7 @@
 - git:
     uri: https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git
     local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins
-    version: thormang3
+    version: update
 - git:
     uri: https://github.com/thor-mang/thor_mang_footstep_planner.git
     local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner
