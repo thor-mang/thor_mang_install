@@ -1,0 +1,22 @@
+# Behavior control related repositories
+- git:
+    uri: https://github.com/team-vigir/flexbe_behavior_engine.git
+    local-name: src/external/flexbe_behavior_engine
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_behaviors.git
+    local-name: src/vigir/vigir_behaviors
+    version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_behavior_synthesis.git
+    local-name: src/vigir/vigir_behavior_synthesis
+    version: master
+- git:
+    uri: https://github.com/team-vigir/ReSpeC.git
+    local-name: src/external/ReSpeC
+    version: master
+- git:
+    uri: https://github.com/team-vigir/executive_smach.git
+    local-name: src/external/executive_smach
+    version: indigo-devel
+

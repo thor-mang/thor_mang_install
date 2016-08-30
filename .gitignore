@@ -5,11 +5,11 @@
 .ssh/
 build/
 devel/
+logs/
 setup.bash
 src/
 stacks/
 scripts/
-rosinstall/optional/
 rosinstall/optional/custom
 .catkin_tools
 

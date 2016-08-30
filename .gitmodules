@@ -1,4 +1,5 @@
 [submodule "custom"]
     path   = rosinstall/optional/custom
     url    = git@git.sim.informatik.tu-darmstadt.de:thorMangDev/thor_mang_custom_install.git
+    branch = thormang3
     ignore = all

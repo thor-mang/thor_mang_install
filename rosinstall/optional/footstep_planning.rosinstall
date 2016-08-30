@@ -20,6 +20,18 @@
     local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core
     version: master
 - git:
+    uri: https://github.com/team-vigir/vigir_walk_control
+    local-name: src/vigir/vigir_walk_control
+    version: master
+- git:
     uri: https://github.com/team-vigir/vigir_terrain_classifier.git
     local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier
+    version: master
+- git:
+    uri: https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git
+    local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins
+    version: master
+- git:
+    uri: https://github.com/thor-mang/thor_mang_footstep_planner.git
+    local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner
     version: master
