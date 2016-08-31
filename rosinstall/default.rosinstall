@@ -17,7 +17,7 @@
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: master}
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
-- git: {local-name: src/vigir/vigir_walk_control, uri: 'https://github.com/team-vigir/vigir_walk_control', version: master}
+- git: {local-name: src/vigir/vigir_step_control, uri: 'https://github.com/team-vigir/vigir_step_control', version: master}
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}
 - git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: master}
 - git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: master}
