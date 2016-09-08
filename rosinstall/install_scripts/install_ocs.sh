@@ -30,7 +30,7 @@ else
 
   # Common pkgs
   wstool merge rosinstall/optional/thormang3_ocs.rosinstall
-#  wstool merge rosinstall/optional/behavior_control.rosinstall
+  wstool merge rosinstall/optional/behavior_control.rosinstall
  
   # Optionally check if update is requested. Not doing update saves some
   # time when called from other scripts
