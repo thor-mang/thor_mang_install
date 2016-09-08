@@ -11,7 +11,6 @@ python-wstool \
 python-catkin-tools \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-serial \
-ros-$ROS_DISTRO-hector-slam \
 ros-$ROS_DISTRO-hector-localization \
 ros-$ROS_DISTRO-map-server
 ros-$ROS_DISTRO-fcl \
@@ -44,6 +43,7 @@ ros-$ROS_DISTRO-openni2-camera \
 ros-$ROS_DISTRO-openni2-launch \
 ros-$ROS_DISTRO-geodesy \
 ros-$ROS_DISTRO-qt-build \
-ros-$ROS_DISTRO-humanoid-nav-msgs "
+ros-$ROS_DISTRO-humanoid-nav-msgs \
+ros-$ROS_DISTRO-polled-camera "
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
