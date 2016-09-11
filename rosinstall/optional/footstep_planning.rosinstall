@@ -1,37 +1,16 @@
-# Footstep Planning    
-- git:
-    uri: https://github.com/team-vigir/vigir_generic_params.git
-    local-name: src/vigir/vigir_generic_params
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_pluginlib.git
-    local-name: src/vigir/vigir_pluginlib
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_footstep_planning_msgs.git
-    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_footstep_planning_basics.git
-    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_footstep_planning_core.git
-    local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_step_control
-    local-name: src/vigir/vigir_step_control
-    version: master
-- git:
-    uri: https://github.com/team-vigir/vigir_terrain_classifier.git
-    local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier
-    version: master
-- git:
-    uri: https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git
-    local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins
-    version: master
-- git:
-    uri: https://github.com/thor-mang/thor_mang_footstep_planner.git
-    local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner
-    version: master
+# Common Packages
+- git: {local-name: src/vigir/vigir_generic_params, uri: 'https://github.com/team-vigir/vigir_generic_params.git', version: master}
+- git: {local-name: src/vigir/vigir_pluginlib, uri: 'https://github.com/team-vigir/vigir_pluginlib.git', version: master}
+
+# Footstep Planning
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: master}
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: master}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: master}
+
+# Step Controller
+- git: {local-name: src/vigir/vigir_step_control, uri: 'https://github.com/team-vigir/vigir_step_control', version: master}
+
+# Terrain Classifier
+- git: {local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}

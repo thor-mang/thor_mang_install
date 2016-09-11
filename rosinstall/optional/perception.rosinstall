@@ -1,13 +1,7 @@
-# Perception   
-- git:
-    uri: https://github.com/team-vigir/robot_self_filter.git
-    local-name: src/externals/robot_self_filter
-    version: support_multiple_collisions_geoms_per_link
-- git:
-   uri: https://github.com/team-vigir/vigir_lidar_proc
-   local-name: src/vigir/vigir_lidar_proc
-   version: master
-- git:
-   uri: https://github.com/team-vigir/vigir_perception
-   local-name: src/vigir/vigir_perception
-   version: thormang3
+# ROBOTIS Perception Demo
+- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: indigo-devel}
+
+# Hector Perception
+- git: {local-name: src/externals/robot_self_filter, uri: https://github.com/team-vigir/robot_self_filter.git, version: support_multiple_collisions_geoms_per_link}
+- git: {local-name: src/vigir/vigir_lidar_proc, uri: https://github.com/team-vigir/vigir_lidar_proc, version: master}
+- git: {local-name: src/vigir/vigir_perception, uri: https://github.com/team-vigir/vigir_perception, version: thormang3}

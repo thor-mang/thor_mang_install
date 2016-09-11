@@ -1,4 +1,5 @@
-- git: 
-    local-name: src/thor/thor_mang_ui
-    uri: 'https://github.com/thor-mang/thor_mang_ui.git'
-    version: master
+# ROBOTIS Demo UI
+- git: {local-name: src/thor/robotis/opc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-OPC.git', version: indigo-devel}
+
+# Hector UI
+- git: {local-name: src/thor/thor_mang_ui, uri: 'https://github.com/thor-mang/thor_mang_ui.git', version: master}
