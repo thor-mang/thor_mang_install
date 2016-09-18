@@ -14,7 +14,7 @@ Choose the desktop variant:
 sudo apt-get install ros-indigo-desktop
 </pre>
 
-Checkout software (please note of the . at the end):
+Checkout software (please take note of the . at the end):
 <pre>
 mkdir ~/thor
 cd ~/thor
