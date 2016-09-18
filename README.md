@@ -7,7 +7,7 @@ General remarks:
 
 *The standard computer setup we use is Ubuntu 14.04/64Bit*
 * Note that other setups might work, but cannot be supported due to the overhead that would involve.
-* Install ROS Indigo as "described here":http://wiki.ros.org/indigo/Installation/Ubuntu
+* Install ROS Indigo as described here: http://wiki.ros.org/indigo/Installation/Ubuntu
 
 Choose the desktop variant:
 <pre>
