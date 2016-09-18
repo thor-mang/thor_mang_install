@@ -31,7 +31,7 @@ Add following line to your .bashrc:
 . ~/thor/setup.bash
 </pre>
 
-Open new terminal before starting to work on THORMANG software.
+Open a new terminal before starting to work on THORMANG software.
 
 ## Install Gazebo Simulation
 
