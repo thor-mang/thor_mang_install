@@ -32,3 +32,15 @@ Add following line to your .bashrc:
 </pre>
 
 Open new terminal before starting to work on THORMANG software.
+
+## Running in Simulation
+
+Start default simulation environment
+<pre>
+thor sim
+</pre>
+
+Open demo interface
+<pre>
+thor ui thormang3_demo.launch
+</pre>
