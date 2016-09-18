@@ -6,13 +6,7 @@ Provides rosinstall files and scripts for making installation of thor_mang softw
 General remarks:
 
 *The standard computer setup we use is Ubuntu 14.04/64Bit*
-* [[setup_ubuntu1404 | Recommended setup for Ubuntu 14.04/64Bit]]
 * Note that other setups might work, but cannot be supported due to the overhead that would involve.
-
-* Set up your git user credentials as described in [[working_with_git | Working with git]].
-* Make sure you have set up a SSH key in Gitlab correctly. See for example "here":http://doc.gitlab.com/ce/ssh/README.html.
-* The key has to be added to the SIM gitlab web interface "here":https://git.sim.informatik.tu-darmstadt.de/profile/keys
-
 * Install ROS Indigo as "described here":http://wiki.ros.org/indigo/Installation/Ubuntu
 
 Choose the desktop variant:
