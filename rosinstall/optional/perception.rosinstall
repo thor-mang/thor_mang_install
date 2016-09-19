@@ -3,5 +3,5 @@
 
 # Hector Perception
 - git: {local-name: src/external/robot_self_filter, uri: https://github.com/team-vigir/robot_self_filter.git, version: support_multiple_collisions_geoms_per_link}
-- git: {local-name: src/vigir/vigir_lidar_proc, uri: https://github.com/team-vigir/vigir_lidar_proc, version: master}
-- git: {local-name: src/vigir/vigir_perception, uri: https://github.com/team-vigir/vigir_perception, version: thormang3}
+- git: {local-name: src/vigir/vigir_lidar_proc, uri: https://github.com/team-vigir/vigir_lidar_proc.git, version: master}
+- git: {local-name: src/vigir/vigir_perception, uri: https://github.com/team-vigir/vigir_perception.git, version: thormang3}
