@@ -3,9 +3,9 @@
 - git: {local-name: src/open_chisel, uri: 'https://github.com/tu-darmstadt-ros-pkg/OpenChisel.git', version: master}
 - git: {local-name: src/mason/mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason.git', version: master}
 - git: {local-name: src/mason/mason_msgs, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_msgs.git', version: master}
-- git: {local-name: src/mason/mason_libs, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_libs.git', version: processing_manager}
-- git: {local-name: src/mason/mason_basics, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_basics.git', version: processing_manager}
-- git: {local-name: src/mason/mason_core, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_core.git', version: processing_manager}
+- git: {local-name: src/mason/mason_libs, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_libs.git', version: master}
+- git: {local-name: src/mason/mason_basics, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_basics.git', version: master}
+- git: {local-name: src/mason/mason_core, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_core.git', version: master}
 - git: {local-name: src/mason/mason_test, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_test.git', version: master}
 - git: {local-name: src/mason/chisel_mason_bridge, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason_bridge.git', version: master}
 - git: {local-name: src/mason/chisel_mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason.git', version: master}
