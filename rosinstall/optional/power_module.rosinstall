@@ -1,0 +1,2 @@
+# Simple biped state estimator
+- git: {local-name: src/thor/thor_mang_power_module, uri: 'https://github.com/thor-mang/thor_mang_power_module.git', version: master}
