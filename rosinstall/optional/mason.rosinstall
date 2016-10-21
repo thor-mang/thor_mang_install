@@ -1,6 +1,7 @@
 - git: {local-name: src/vigir/vigir_generic_params, uri: 'https://github.com/team-vigir/vigir_generic_params.git', version: master}
 - git: {local-name: src/vigir/vigir_pluginlib, uri: 'https://github.com/team-vigir/vigir_pluginlib.git', version: master}
-- git: {local-name: src/open_chisel, uri: 'https://github.com/tu-darmstadt-ros-pkg/OpenChisel.git', version: master}
+- git: {local-name: src/chisel/open_chisel, uri: 'https://github.com/tu-darmstadt-ros-pkg/OpenChisel.git', version: master}
+- git: {local-name: src/chisel/chisel_rviz_plugins, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_rviz_plugins.git', version: master}
 - git: {local-name: src/mason/mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason.git', version: master}
 - git: {local-name: src/mason/mason_msgs, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_msgs.git', version: master}
 - git: {local-name: src/mason/mason_libs, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_libs.git', version: master}
