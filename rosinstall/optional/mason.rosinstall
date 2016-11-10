@@ -8,8 +8,8 @@
 - git: {local-name: src/mason/mason_basics, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_basics.git', version: master}
 - git: {local-name: src/mason/mason_core, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_core.git', version: master}
 - git: {local-name: src/mason/mason_test, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_test.git', version: master}
-- git: {local-name: src/mason/mason_chisel_octomap_plugin, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_chisel_octomap_plugin.git', version: master}
-- git: {local-name: src/mason/chisel_mason_bridge, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason_bridge.git', version: master}
+- git: {local-name: src/mason/octomap_chisel_mason_plugin, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/octomap_chisel_mason_plugin.git', version: master}
+- git: {local-name: src/mason/chisel_mason_plugins, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason_plugins.git', version: master}
 - git: {local-name: src/mason/chisel_mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason.git', version: master}
-- git: {local-name: src/mason/mason_chisel_ethz_mapping_plugins, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/mason_chisel_ethz_mapping_plugins.git', version: master}
+- git: {local-name: src/mason/grid_map_chisel_mason_plugins, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/grid_map_chisel_mason_plugins.git', version: master}
 - git: {local-name: src/thor/thor_mang_mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/ThorMangDev/thor_mang_mason.git', version: master}
