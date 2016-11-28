@@ -55,5 +55,5 @@ thor sim
 
 Open demo interface
 <pre>
-thor ui thormang3_demo.launch
+thor ui demo.launch
 </pre>
