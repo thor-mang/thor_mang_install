@@ -45,6 +45,7 @@ ros-$ROS_DISTRO-geodesy \
 ros-$ROS_DISTRO-qt-build \
 ros-$ROS_DISTRO-humanoid-nav-msgs \
 ros-$ROS_DISTRO-polled-camera \
+ros-$ROS_DISTRO-trac-ik-kinematics-plugin \
 ros-$ROS_DISTRO-laser-assembler "
 
 sudo apt-get -y install $PACKAGES_TO_INSTALL
