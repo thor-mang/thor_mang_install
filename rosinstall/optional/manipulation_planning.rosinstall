@@ -7,3 +7,7 @@
     uri: https://github.com/team-vigir/vigir_perception_msgs
     local-name: src/vigir/vigir_perception_msgs
     version: master
+- git:
+    uri: https://github.com/team-vigir/vigir_planning_msgs.git
+    local-name: src/vigir/vigir_planning_msgs
+    version: master
