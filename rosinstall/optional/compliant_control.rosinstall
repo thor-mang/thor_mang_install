@@ -1,0 +1,19 @@
+- git:
+    uri: https://github.com/Martin-Oehler/compliant_control.git
+    local-name: src/compliant_ros_controller
+    version: master
+    
+- git:
+    uri: https://github.com/team-vigir/vigir_interactive_marker_pose_server.git
+    local-name: src/vigir_interactive_marker_pose_server
+
+- git:
+    uri: https://git.sim.informatik.tu-darmstadt.de/oehler/thor_compliant_control_launch.git
+    local-name: src/thor/thor_mang_compliant_control_launch
+    version: thormang3
+
+- git:
+    uri: https://git.sim.informatik.tu-darmstadt.de/oehler/tipposepublisher.git
+    local-name: src/tip_pose_publisher
+    version: master
+
