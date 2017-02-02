@@ -6,6 +6,7 @@ echo "Installing needed packages (both ROS package and system dependency .deb pa
 PACKAGES_TO_INSTALL="\
 mercurial \
 git \
+libncurses5-dev \
 python-rosdep \
 python-wstool \
 python-catkin-tools \
