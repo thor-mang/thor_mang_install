@@ -1,0 +1,5 @@
+# Plugin/Object templates
+- git:
+    uri: https://github.com/thor-mang/icp_alignment_server.git
+    local-name: src/icp_alignment_server
+    version: master
