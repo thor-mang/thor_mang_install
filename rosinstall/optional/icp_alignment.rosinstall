@@ -3,3 +3,7 @@
     uri: https://github.com/thor-mang/icp_alignment_server.git
     local-name: src/icp_alignment_server
     version: master
+- git:
+    uri: git@git.sim.informatik.tu-darmstadt.de:argonauts/argo_icp_alignment.git
+    local-name: src/argo_icp_alignment
+    version: master
