@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd $THOR_ROOT
+cd $ROSWSS_ROOT
 
-if [ -z "$THOR_ROOT" ]; then
-    THOR_ROOT=$(cd `dirname $0`; pwd)
+if [ -z "$ROSWSS_ROOT" ]; then
+    ROSWSS_ROOT=$(cd `dirname $0`; pwd)
 fi
 
 # exit if one of the commands fail
@@ -44,7 +44,7 @@ if [ -z "$ROS_DISTRO" ]; then
 fi
 
 # make sure package dependencies are installed
-source $THOR_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
+source $ROSWSS_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
 
 # initialize workspace
 if [ ! -f ".rosinstall" ]; then
@@ -52,7 +52,7 @@ if [ ! -f ".rosinstall" ]; then
 fi
 
 # merge rosinstall files from rosinstall/*.rosinstall
-for file in $THOR_ROOT/rosinstall/*.rosinstall; do
+for file in $ROSWSS_ROOT/rosinstall/*.rosinstall; do
     filename=$(basename ${file%.*})
     echo "Merging to workspace: '$filename'.rosinstall"
     wstool merge $file -y
@@ -68,8 +68,10 @@ rosdep update
 rosdep install -r --from-path . --ignore-src
 
 # remove symlink to write protected CMakefile and use a copy instead
-rm $THOR_ROOT/src/CMakeLists.txt
-cp /opt/ros/$ROS_DISTRO/share/catkin/cmake/toplevel.cmake $THOR_ROOT/src/CMakeLists.txt
+if [ -f $ROSWSS_ROOT/src/CMakeLists.txt ]; then
+  rm $ROSWSS_ROOT/src/CMakeLists.txt
+fi
+cp /opt/ros/$ROS_DISTRO/share/catkin/cmake/toplevel.cmake $ROSWSS_ROOT/src/CMakeLists.txt
 
 echo
 
@@ -77,15 +79,13 @@ echo
 cat >setup.bash <<EOF
 #!/bin/bash
 # automated generated file
-. $THOR_ROOT/devel/setup.bash
+. $ROSWSS_ROOT/devel/setup.bash
 EOF
-
-. $THOR_ROOT/setup.bash
 
 # invoke make for the initial setup
 #catkin_make cmake_check_build_system
-export THOR_SCRIPTS=$THOR_ROOT/src/thor/thor_mang_scripts/scripts
-. $THOR_ROOT/src/thor/thor_mang_scripts/scripts/make.sh
+export ROSWSS_SCRIPTS=$ROSWSS_ROOT/src/thor/thor_mang_scripts/scripts
+. $ROSWSS_SCRIPTS/make.sh
 echo
 
 # Initialization successful. Print message and exit.
@@ -95,11 +95,11 @@ cat <<EOF
 Workspace initialization completed.
 You can setup your current shell's environment by entering
 
-    source $THOR_ROOT/setup.bash
+    source $ROSWSS_ROOT/setup.bash
 
 or by adding this command to your .bashrc file for automatic setup on each invocation of an interactive shell:
 
-    echo "source $THOR_ROOT/setup.bash" >> ~/.bashrc
+    echo "source $ROSWSS_ROOT/setup.bash" >> ~/.bashrc
 
 You can also modify your workspace config (e.g. for adding additional repositories or
 packages) using the wstool command.

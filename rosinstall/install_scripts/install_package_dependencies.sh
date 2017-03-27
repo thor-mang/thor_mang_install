@@ -49,4 +49,4 @@ ros-$ROS_DISTRO-polled-camera \
 ros-$ROS_DISTRO-trac-ik-kinematics-plugin \
 ros-$ROS_DISTRO-laser-assembler "
 
-sudo apt-get -y install $PACKAGES_TO_INSTALL
+dpkg -s $PACKAGES_TO_INSTALL 2>/dev/null >/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL

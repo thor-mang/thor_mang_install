@@ -1,13 +1,13 @@
 #!/bin/bash
 
-#cd $THOR_ROOT
+#cd $ROSWSS_ROOT
 
-if [ -z $THOR_ROOT ]; then
-  echo "Variable THOR_ROOT not set, make sure the workspace is set up properly!"
+if [ -z $ROSWSS_ROOT ]; then
+  echo "Variable ROSWSS_ROOT not set, make sure the workspace is set up properly!"
 else
   echo "Installing onboard software..."
   
-  cd $THOR_ROOT
+  cd $ROSWSS_ROOT
   
   # Common pkgs
   wstool merge rosinstall/optional/common_msgs.rosinstall

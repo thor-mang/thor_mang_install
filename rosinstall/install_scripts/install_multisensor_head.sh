@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#cd $THOR_ROOT
+#cd $ROSWSS_ROOT
 
 #!/bin/bash
 
@@ -19,12 +19,12 @@ sudo apt-get -y install $PACKAGES_TO_INSTALL
 
 
 
-if [ -z $THOR_ROOT ]; then
-  echo "Variable THOR_ROOT not set, make sure the workspace is set up properly!"
+if [ -z $ROSWSS_ROOT ]; then
+  echo "Variable ROSWSS_ROOT not set, make sure the workspace is set up properly!"
 else
   echo "Installing multisensor head software..."
   
-  cd $THOR_ROOT
+  cd $ROSWSS_ROOT
   
   # Common pkgs
   wstool merge rosinstall/optional/multisensor_head.rosinstall
