@@ -14,3 +14,5 @@
 - git: {local-name: src/mason/chisel_mason_rqt_widgets, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/chisel_mason_rqt_widgets.git', version: master}
 - git: {local-name: src/mason/grid_map_chisel_mason_plugins, uri: 'https://git.sim.informatik.tu-darmstadt.de/hector/grid_map_chisel_mason_plugins.git', version: master}
 - git: {local-name: src/thor/thor_mang_mason, uri: 'https://git.sim.informatik.tu-darmstadt.de/ThorMangDev/thor_mang_mason.git', version: master}
+
+- git: {local-name: src/grid_map_proc, uri: 'https://github.com/tu-darmstadt-ros-pkg/grid_map_proc.git', version: master}

@@ -84,7 +84,7 @@ EOF
 
 # invoke make for the initial setup
 #catkin_make cmake_check_build_system
-export ROSWSS_SCRIPTS=$ROSWSS_ROOT/src/thor/thor_mang_scripts/scripts
+export ROSWSS_SCRIPTS=$ROSWSS_ROOT/src/workspace_scripts/scripts
 . $ROSWSS_SCRIPTS/make.sh
 echo
 
