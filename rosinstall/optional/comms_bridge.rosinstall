@@ -1,0 +1,5 @@
+# External Packages
+- git: {local-name: src/external/nimbro_network, uri: 'https://github.com/AIS-Bonn/nimbro_network.git', version: master}
+
+# THORMANG Comms Bridge packages
+- git: {local-name: src/thor/thor_mang_comms_bridge, uri: 'https://github.com/thor-mang/thor_mang_comms_bridge.git', version: master}
