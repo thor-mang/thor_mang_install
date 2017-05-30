@@ -1,2 +1,2 @@
-# Simple biped state estimator
 - git: {local-name: src/thor/thor_mang_health_status, uri: 'https://github.com/thor-mang/thor_health_status.git', version: master}
+- git: {local-name: src/rqt_robot_plugins, uri: 'https://github.com/ros-visualization/rqt_robot_plugins.git', version: master}
