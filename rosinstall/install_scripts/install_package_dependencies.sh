@@ -11,6 +11,7 @@ python-rosdep \
 python-wstool \
 python-catkin-tools \
 ros-$ROS_DISTRO-desktop \
+ros-$ROS_DISTRO-rqt-multiplot \
 ros-$ROS_DISTRO-serial \
 ros-$ROS_DISTRO-hector-localization \
 ros-$ROS_DISTRO-map-server
