@@ -1,0 +1,1 @@
+- git: {local-name: src/thor/thor_mang_teleop, uri: 'https://git.sim.informatik.tu-darmstadt.de/ThorMangDev/thor_mang_teleop.git', version: master}
