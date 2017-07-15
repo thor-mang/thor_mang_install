@@ -14,7 +14,7 @@ ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-rqt-multiplot \
 ros-$ROS_DISTRO-serial \
 ros-$ROS_DISTRO-hector-localization \
-ros-$ROS_DISTRO-map-server
+ros-$ROS_DISTRO-map-server \
 ros-$ROS_DISTRO-fcl \
 ros-$ROS_DISTRO-image-pipeline \
 ros-$ROS_DISTRO-octomap-msgs \
