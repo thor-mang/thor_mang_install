@@ -2,7 +2,7 @@
 - git: {local-name: src/thor/robotis/opc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-OPC.git', version: indigo-devel}
 
 # Hector UI
-- git: {local-name: src/thor/thor_mang_ui, uri: 'https://github.com/thor-mang/thor_mang_ui.git', version: master}
+- git: {local-name: src/thor/thor_mang_ui, uri: 'https://github.com/thor-mang/thor_mang_ui.git', version: indigo-devel}
 
 # Common
 - git: {local-name: src/thor/thor_mang_rqt_multiplot_configs, uri: 'https://github.com/thor-mang/thor_mang_rqt_multiplot_configs.git', version: master}
