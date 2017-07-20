@@ -1,5 +1,5 @@
 # ROBOTIS Perception Demo
-- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: indigo-devel}
+- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: kinetic-devel}
 
 # Hector Perception
 - git: {local-name: src/external/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: support_multiple_collisions_geoms_per_link}

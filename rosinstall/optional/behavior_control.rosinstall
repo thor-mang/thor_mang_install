@@ -18,5 +18,5 @@
 - git:
     uri: https://github.com/team-vigir/executive_smach.git
     local-name: src/external/executive_smach
-    version: indigo-devel
+    version: kinetic-devel
 
