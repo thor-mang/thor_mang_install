@@ -1,7 +1,7 @@
 - git:
     uri: https://github.com/Martin-Oehler/compliant_control.git
     local-name: src/compliant_ros_controller
-    version: master
+    version: kinetic-devel
     
 - git:
     uri: https://github.com/team-vigir/vigir_interactive_marker_pose_server.git
