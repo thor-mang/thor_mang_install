@@ -1,4 +1,3 @@
 # Hardware Drivers
-- git: {local-name: src/microstrain_3dm_gx3_45, uri: 'https://github.com/thor-mang/microstrain_3dm_gx3_45.git', version: master}
 - git: {local-name: src/microstrain_3dm_gx5_45, uri: 'https://github.com/thor-mang/microstrain_3dm_gx5_45.git', version: master}
 
