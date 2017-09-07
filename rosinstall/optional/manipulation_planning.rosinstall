@@ -2,9 +2,9 @@
 - git:
    uri: https://github.com/team-vigir/vigir_manipulation_planning.git
    local-name: src/vigir/vigir_manipulation_planning
-   version: thormang3
+   version: kinetic-devel 
 - git:
-    uri: https://github.com/team-vigir/vigir_perception_msgs
+    uri: https://github.com/team-vigir/vigir_perception_msgs.git
     local-name: src/vigir/vigir_perception_msgs
     version: master
 - git:
