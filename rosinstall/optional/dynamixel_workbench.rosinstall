@@ -1,1 +1,2 @@
-- git: {local-name: src/thor/robotis/dynamixel-workbench, uri: 'https://github.com/thor-mang/dynamixel-workbench.git', version: kinetic-devel}
+- git: {local-name: src/dynamixel_workbench, uri: 'https://github.com/ROBOTIS-GIT/dynamixel-workbench.git', version: kinetic-devel}
+- git: {local-name: src/dynamixel_workbench_msgs, uri: 'https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs', version: kinetic-devel}
