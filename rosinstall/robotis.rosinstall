@@ -1,5 +1,5 @@
 # Minimal ROBOTIS setup
-- git: {local-name: src/thor/robotis/dynamixel_sdk, uri: 'https://github.com/thor-mang/DynamixelSDK.git', version: indigo-devel}
+- git: {local-name: src/thor/robotis/dynamixel_sdk, uri: 'https://github.com/tu-darmstadt-ros-pkg/DynamixelSDK.git', version: indigo-devel}
 - git: {local-name: src/thor/robotis/common, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Common.git', version: indigo-devel}
 - git: {local-name: src/thor/robotis/math, uri: 'https://github.com/thor-mang/ROBOTIS-Math.git', version: indigo-devel}
 - git: {local-name: src/thor/robotis/thormang_msgs, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-msgs.git', version: indigo-devel}
