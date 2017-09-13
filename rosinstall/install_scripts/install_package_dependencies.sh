@@ -7,6 +7,8 @@ PACKAGES_TO_INSTALL="\
 mercurial \
 git \
 libncurses5-dev \
+libqt4-dev \
+qt4-qmake \
 python-rosdep \
 python-wstool \
 python-catkin-tools \
