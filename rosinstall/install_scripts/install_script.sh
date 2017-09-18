@@ -21,7 +21,7 @@ echo
 
 # find an installation of ROS
 if [ -z "$ROS_DISTRO" ]; then
-    _ROS_DISTROS="fuerte groovy hydro indigo kinetic Lunar"
+    _ROS_DISTROS="indigo jade kinetic lunar"
 
     # use basename of the current folder as default ROS distro
     ROS_DISTRO=$(basename $(cd `dirname $0`; pwd))
