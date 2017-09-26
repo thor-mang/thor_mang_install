@@ -7,3 +7,4 @@
 - git: {local-name: src/vigir/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
 - git: {local-name: src/vigir/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs.git', version: master}
 - git: {local-name: src/vigir/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception.git', version: thormang3}
+- git: {local-name: src/thor/thor_mang_robot_bringup: uri: 'https://github.com/thor-mang/thor_mang_robot_bringup.git', version: master}

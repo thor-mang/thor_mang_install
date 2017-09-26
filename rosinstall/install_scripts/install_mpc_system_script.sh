@@ -20,6 +20,17 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   # add thor user to dialout
   sudo usermod -aG dialout thor 
 
+  # checkout robot packages
+  echo ">>> Install packages: motion, vt_hands moveit_planning"
+  bash -ic "thor install motion vt_hands moveit_planning"
+  bash -ic "thor update_make"
+
+  # enable systemd init script
+  echo ">>> setup autostart"
+  sudo systemctl enable turtle.service
+  # if desired to check if successfull -> "sudo systemctl is-enabled turtle.service" should return "enabled"
+
+
   echo "Installation completed! Please reboot system now."
 else
   echo ">>> Install cancelled by user."
