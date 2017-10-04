@@ -6,16 +6,18 @@ read -N 1 REPLY
 
 if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   cd /
-
-  # remove default config files
-  sudo mv etc/network/interfaces etc/network/interfaces.bak
-  sudo mv etc/screenrc etc/screenrc.bak
+  if [ ! -d /.git ]; then
+    echo ">>> Install system configs"
+    # remove default config files
+    sudo mv etc/network/interfaces etc/network/interfaces.bak
+    sudo mv etc/screenrc etc/screenrc.bak
   
-  # fetch replacement configuration files stored in git repo
-  sudo git init
-  sudo git remote add origin https://github.com/thor-mang/system_mpc_ubuntu.git
-  sudo git fetch
-  sudo git checkout -t origin/master
+    # fetch replacement configuration files stored in git repo
+  	sudo git init
+  	sudo git remote add origin https://github.com/thor-mang/system_mpc_ubuntu.git
+  	sudo git fetch
+  	sudo git checkout -t origin/master
+  fi
   
   # add thor user to dialout
   sudo usermod -aG dialout thor 
@@ -27,8 +29,8 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
 
   # enable systemd init script
   echo ">>> setup autostart"
-  sudo systemctl enable turtle.service
-  # if desired to check if successfull -> "sudo systemctl is-enabled turtle.service" should return "enabled"
+  sudo systemctl enable thor.service
+  # if desired to check if successfull -> "sudo systemctl is-enabled thor.service" should return "enabled"
 
 
   echo "Installation completed! Please reboot system now."
