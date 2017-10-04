@@ -32,7 +32,6 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   sudo systemctl enable thor.service
   # if desired to check if successfull -> "sudo systemctl is-enabled thor.service" should return "enabled"
 
-
   echo "Installation completed! Please reboot system now."
 else
   echo ">>> Install cancelled by user."
