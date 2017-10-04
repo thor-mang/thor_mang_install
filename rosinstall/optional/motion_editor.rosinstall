@@ -1,0 +1,5 @@
+- git:
+    uri: https://github.com/tu-darmstadt-ros-pkg/motion_editor.git
+    local-name: src/motion_editor
+    version: kinetic-devel
+
