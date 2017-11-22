@@ -13,11 +13,13 @@ fi
 
 # delete old files
 echo Cleaning up old workspace files...
-for f in .rosinstall* devel build; do
+for f in .rosinstall* devel build install .catkin_tools; do
     [ -f $f ] && echo "rm -iv $f" && rm -i $f
     [ -d $f ] && echo "rm -Irv $f" && rm -Ir $f
 done
 echo
+
+unset CMAKE_PREFIX_PATH
 
 # find an installation of ROS
 if [ -z "$ROS_DISTRO" ]; then
