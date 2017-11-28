@@ -1,9 +1,9 @@
 #!/bin/bash
 
-cd $ROSWSS_ROOT
-
 if [ -z "$ROSWSS_ROOT" ]; then
     ROSWSS_ROOT=$(cd `dirname $0`; pwd)
+else
+    cd $ROSWSS_ROOT
 fi
 
 # exit if one of the commands fail
@@ -40,18 +40,26 @@ if [ -z "$ROS_DISTRO" ]; then
         echo "Directory /opt/ros/$ROS_DISTRO does not exists!"
         exit 1
     fi
-
-    source /opt/ros/$ROS_DISTRO/setup.sh
-    echo
 fi
 
-# make sure package dependencies are installed
-source $ROSWSS_ROOT/rosinstall/install_scripts/install_package_dependencies.sh
+source /opt/ros/$ROS_DISTRO/setup.sh
+echo
 
 # initialize workspace
 if [ ! -f ".rosinstall" ]; then
     wstool init .
+elif [ ! -d ".catkin_tools" ]; then
+    catkin init
 fi
+
+# running bash scripts from rosinstall/*.sh
+echo ">>> Running bash scripts"
+for file in $ROSWSS_ROOT/rosinstall/*.sh; do
+    filename=$(basename ${file%.*})
+    echo "Running bash script: '$filename'.sh"
+    $file
+    echo
+done
 
 # merge rosinstall files from rosinstall/*.rosinstall
 for file in $ROSWSS_ROOT/rosinstall/*.rosinstall; do
@@ -62,7 +70,7 @@ done
 echo
 
 # update workspace
-wstool update
+wstool update -j$(nproc)
 echo
 
 # install dependencies
