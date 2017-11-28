@@ -1,5 +1,7 @@
 #!/bin/bash
 
+source $ROSWSS_BASE_SCRIPTS/helper/helper.sh
+
 # This should be extended to first check if everything is installed and only do the sudo requiring call when there's anything missing.
 echo "Installing needed packages (both ROS package and system dependency .deb packages) ..."
 
@@ -44,6 +46,6 @@ ros-$ROS_DISTRO-polled-camera \
 ros-$ROS_DISTRO-trac-ik-kinematics-plugin \
 ros-$ROS_DISTRO-laser-assembler "
 
-dpkg -s $PACKAGES_TO_INSTALL &>/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL
+apt_install $PACKAGES_TO_INSTALL
 
 echo "...DONE!"
