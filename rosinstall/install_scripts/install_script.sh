@@ -1,5 +1,11 @@
 #!/bin/bash
 
+apt_install()
+{
+    PACKAGES_TO_INSTALL=$1
+    dpkg -s $PACKAGES_TO_INSTALL &>/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL
+}
+
 if [ -z "$ROSWSS_ROOT" ]; then
     ROSWSS_ROOT=$(cd `dirname $0`; pwd)
 else
@@ -9,10 +15,13 @@ fi
 # exit if one of the commands fail
 #set -e
 
-# install
+# install deb packages
+echo ">>> Checking system packages"
+apt_install python-rosdep python-wstool python-catkin-tools
+echo
 
 # delete old files
-echo Cleaning up old workspace files...
+echo ">>> Cleaning up old workspace files..."
 for f in .rosinstall* devel build install .catkin_tools; do
     [ -f $f ] && echo "rm -iv $f" && rm -i $f
     [ -d $f ] && echo "rm -Irv $f" && rm -Ir $f
