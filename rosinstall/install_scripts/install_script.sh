@@ -2,8 +2,10 @@
 
 apt_install()
 {
-    PACKAGES_TO_INSTALL=$1
-    dpkg -s $PACKAGES_TO_INSTALL &>/dev/null || sudo apt-get -y install $PACKAGES_TO_INSTALL
+    while [[ ! -z "$1" ]]; do
+        dpkg -s $1 &>/dev/null || sudo apt-get -y install $1
+        shift
+    done
 }
 
 if [ -z "$ROSWSS_ROOT" ]; then
@@ -61,15 +63,6 @@ elif [ ! -d ".catkin_tools" ]; then
     catkin init
 fi
 
-# running bash scripts from rosinstall/*.sh
-echo ">>> Running bash scripts"
-for file in $ROSWSS_ROOT/rosinstall/*.sh; do
-    filename=$(basename ${file%.*})
-    echo "Running bash script: '$filename'.sh"
-    $file
-    echo
-done
-
 # merge rosinstall files from rosinstall/*.rosinstall
 for file in $ROSWSS_ROOT/rosinstall/*.rosinstall; do
     filename=$(basename ${file%.*})
@@ -101,10 +94,14 @@ cat >setup.bash <<EOF
 . $ROSWSS_ROOT/devel/setup.bash
 EOF
 
-# invoke make for the initial setup
-#catkin_make cmake_check_build_system
+# invoke scripts build in order to source main scripts
+catkin build workspace_scripts thor_mang_scripts
+echo
+source setup.bash
+
+# invoke make for final setup
 export ROSWSS_SCRIPTS=$ROSWSS_ROOT/src/workspace_scripts/scripts
-. $ROSWSS_SCRIPTS/make.sh
+. $ROSWSS_SCRIPTS/update_make.sh
 echo
 
 # Initialization successful. Print message and exit.
