@@ -103,6 +103,7 @@ source setup.bash
 export ROSWSS_SCRIPTS=$ROSWSS_ROOT/src/workspace_scripts/scripts
 . $ROSWSS_SCRIPTS/update_make.sh
 echo
+source setup.bash
 
 # Initialization successful. Print message and exit.
 cat <<EOF
