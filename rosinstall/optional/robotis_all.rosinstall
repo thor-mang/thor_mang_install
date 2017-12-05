@@ -1,6 +1,6 @@
 # Complete ROBOTIS setup
 - git: {local-name: src/thor/robotis/documents, uri: 'https://github.com/ROBOTIS-GIT/ROBOTIS-Documents.git', version: master}
-- git: {local-name: src/thor/robotis/dynamixel_sdk, uri: 'https://github.com/thor-mang/DynamixelSDK.git', version: kinetic-devel}
+- git: {local-name: src/thor/robotis/dynamixel_sdk, uri: 'https://github.com/tu-darmstadt-ros-pkg/DynamixelSDK.git', version: thormang3}
 - git: {local-name: src/thor/robotis/dynamixel-workbench, uri: 'https://github.com/thor-mang/dynamixel-workbench.git', version: kinetic-devel}
 - git: {local-name: src/thor/robotis/common, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Common.git', version: kinetic-devel}
 - git: {local-name: src/thor/robotis/math, uri: 'https://github.com/thor-mang/ROBOTIS-Math.git', version: kinetic-devel}
