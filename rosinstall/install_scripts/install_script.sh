@@ -24,10 +24,7 @@ echo
 
 # delete old files
 echo ">>> Cleaning up old workspace files..."
-for f in .rosinstall* devel build install .catkin_tools; do
-    [ -f $f ] && echo "rm -iv $f" && rm -i $f
-    [ -d $f ] && echo "rm -Irv $f" && rm -Ir $f
-done
+rosinstall/install_scripts/clear_install.sh
 echo
 
 unset CMAKE_PREFIX_PATH
