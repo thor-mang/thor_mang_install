@@ -1,9 +1,15 @@
 - git:
     uri: https://github.com/tu-darmstadt-ros-pkg/hector_calibration.git
     local-name: src/hector_calibration
-    version: master
+    version: kinetic-devel
     
 - git:
     uri: https://github.com/team-vigir/vigir_lidar_proc.git
     local-name: src/external/vigir_lidar_proc
-    version: master
+    version: kinetic-devel
+    
+- git:
+    local-name: src/ceres-solver
+    uri: 'https://ceres-solver.googlesource.com/ceres-solver.git'
+    version: '1.12.0rc4'
+
