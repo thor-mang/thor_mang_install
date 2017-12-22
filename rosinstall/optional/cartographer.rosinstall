@@ -1,6 +1,6 @@
 # Cartographer
-- git: {local-name: src/external/cartographer, uri: 'https://github.com/tu-darmstadt-ros-pkg/cartographer.git', version: rc17}
-- git: {local-name: src/external/cartographer_ros, uri: 'https://github.com/tu-darmstadt-ros-pkg/cartographer_ros.git', version: rc17}
+- git: {local-name: src/external/cartographer, uri: 'https://github.com/tu-darmstadt-ros-pkg/cartographer.git', version: rc17_wo_tsdf}
+- git: {local-name: src/external/cartographer_ros, uri: 'https://github.com/tu-darmstadt-ros-pkg/cartographer_ros.git', version: rc17_wo_tsdf}
 - git: {local-name: src/thor/thor_mang_cartographer, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_cartographer.git
 ', version: master}
 - git: {local-name: src/external/ceres-solver, uri: 'https://ceres-solver.googlesource.com/ceres-solver.git', version: '1.12.0'}
