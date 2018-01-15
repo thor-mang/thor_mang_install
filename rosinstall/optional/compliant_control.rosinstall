@@ -1,5 +1,5 @@
 - git: {local-name: src/compliant_ros_controller, uri: 'https://github.com/Martin-Oehler/compliant_control.git', version: kinetic-devel}
 - git: {local-name: src/vigir_interactive_marker_pose_server, uri: 'https://github.com/team-vigir/vigir_interactive_marker_pose_server.git'}
-- git: {local-name: src/thor/thor_mang_compliant_control_launch, uri: 'git@gitgit.sim.informatik.tu-darmstadt.de/oehler/thor_compliant_control_launch.git', version: thormang3}
-- git: {local-name: src/tip_pose_publisher, uri: 'git@git.sim.informatik.tu-darmstadt.de/oehler/tipposepublisher.git', version: master}
+- git: {local-name: src/thor/thor_mang_compliant_control_launch, uri: 'git@git.sim.informatik.tu-darmstadt.de:oehler/thor_compliant_control_launch.git', version: thormang3}
+- git: {local-name: src/tip_pose_publisher, uri: 'git@git.sim.informatik.tu-darmstadt.de:oehler/tipposepublisher.git', version: master}
 - git: {local-name: src/robot_transforms, uri: 'https://github.com/hector-humanoid/robot_transforms.git', version: master}
