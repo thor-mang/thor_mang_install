@@ -32,6 +32,9 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   sudo systemctl enable thor.service
   # if desired to check if successfull -> "sudo systemctl is-enabled thor.service" should return "enabled"
 
+  # enable shutdown and reboot without root password promt
+  echo 'thor ALL=(ALL) NOPASSWD: /sbin/poweroff, /sbin/reboot, /sbin/shutdown' | sudo EDITOR='tee -a' visudo
+
   echo "Installation completed! Please reboot system now."
 else
   echo ">>> Install cancelled by user."
