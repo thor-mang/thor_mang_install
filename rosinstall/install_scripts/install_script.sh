@@ -23,7 +23,6 @@ apt_install python-rosdep python-wstool python-catkin-tools
 echo
 
 # delete old files
-echo ">>> Cleaning up old workspace files..."
 rosinstall/install_scripts/clear_install.sh
 echo
 
