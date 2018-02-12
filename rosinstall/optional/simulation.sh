@@ -1,3 +1,4 @@
 #!/bin/bash
 
-rosinstall common/simulation.rosinstall common/vt_hands_gazebo.rosinstall
+echo "Merging rosinstall dependencies into workspace:"
+rosinstall common/vt_hands_gazebo.rosinstall

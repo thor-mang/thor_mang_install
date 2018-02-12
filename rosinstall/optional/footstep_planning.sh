@@ -1,3 +1,4 @@
 #!/bin/bash
 
-rosinstall common/vigir_pluginlib.rosinstall common/footstep_planning.rosinstall
+echo "Merging rosinstall dependencies into workspace:"
+rosinstall common/vigir_pluginlib.rosinstall
