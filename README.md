@@ -37,7 +37,7 @@ Open a new terminal before starting to work on THORMANG software.
 
 For simulation you need to install following rosinstalls:
 <pre>
-thor install simulation ui vt_hands_gazebo
+thor install simulation ui
 thor update_make
 </pre>
 
