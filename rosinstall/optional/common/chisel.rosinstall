@@ -1,2 +1,2 @@
-- git: {local-name: src/chisel/open_chisel, uri: 'https://github.com/tu-darmstadt-ros-pkg/OpenChisel.git', version: master}
-- git: {local-name: src/chisel/chisel_rviz_plugins, uri: 'git@git.sim.informatik.tu-darmstadt.de:hector/chisel_rviz_plugins.git', version: master}
+- git: {local-name: src/chisel/open_chisel, uri: 'https://github.com/tu-darmstadt-ros-pkg/OpenChisel.git', version: voxel_template}
+- git: {local-name: src/chisel/chisel_rviz_plugins, uri: 'git@git.sim.informatik.tu-darmstadt.de:hector/chisel_rviz_plugins.git', version: voxel_template}
