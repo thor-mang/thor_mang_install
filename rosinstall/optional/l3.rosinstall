@@ -2,6 +2,7 @@
 - git: {local-name: src/l3/l3_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_msgs.git', version: master}
 - git: {local-name: src/l3/l3_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_libs.git', version: master}
 - git: {local-name: src/l3/l3_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_core.git', version: master}
+- git: {local-name: src/l3/l3_zmp_walk, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_zmp_walk.git', version: master}
 
 # l3 thormang integration
 - git: {local-name: src/thor/thor_mang_l3, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3.git', version: master}
