@@ -1,0 +1,2 @@
+# VT Hands packages
+- git: {local-name: src/thor/thor_vt_hand/thor_vt_hand_gazebo, uri: 'https://github.com/hector-humanoid/thor_vt_hand_gazebo.git', version: master}
