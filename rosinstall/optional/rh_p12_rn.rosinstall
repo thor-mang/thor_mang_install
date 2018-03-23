@@ -1,0 +1,2 @@
+# RH-P12-RN packages
+- git: {local-name: src/thor/robotis/rh_p12_rn/rh_p12_rn_common, uri: 'https://github.com/hector-humanoid/RH-P12-RN.git', version: urdf_only}
