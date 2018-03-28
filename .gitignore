@@ -4,6 +4,7 @@
 .rosinstall.bak
 .catkin_workspace
 .ssh
+.hands
 build
 devel
 logs
