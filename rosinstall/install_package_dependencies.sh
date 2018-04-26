@@ -24,6 +24,7 @@ ros-$ROS_DISTRO-octomap-msgs \
 ros-$ROS_DISTRO-octomap-ros \
 ros-$ROS_DISTRO-octomap-rviz-plugins \
 ros-$ROS_DISTRO-ompl \
+ros-$ROS_DISTRO-moveit-msgs \
 ros-$ROS_DISTRO-ros-control \
 ros-$ROS_DISTRO-ros-controllers \
 ros-$ROS_DISTRO-camera-info-manager \
