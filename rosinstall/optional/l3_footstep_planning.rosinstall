@@ -1,0 +1,7 @@
+# l3 Footstep Planning Framework
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_msgs.git', version: master}
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_libs.git', version: master}
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_ui, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_ui.git', version: master}
+
+# l3 thormang integration
+
