@@ -3,6 +3,7 @@
 echo "WARNING: You are going to overwrite system settings! This operation cannot be undone!"
 echo -n "ARE YOU SURE TO PROCEED? [y/N]"
 read -N 1 REPLY
+echo
 
 if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   cd /

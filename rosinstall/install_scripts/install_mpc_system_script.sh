@@ -1,10 +1,17 @@
 #!/bin/bash
 
+source $ROSWSS_BASE_SCRIPTS/helper/helper.sh
+
 echo "WARNING: You are going to overwrite system settings! This operation cannot be undone!"
 echo -n "ARE YOU SURE TO PROCEED? [y/N]"
 read -N 1 REPLY
+echo
 
 if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
+  # install missing packages
+  echo ">>> Install additional system debs"
+  apt_install chrony
+
   cd /
   if [ ! -d /.git ]; then
     echo ">>> Install system configs"
@@ -20,7 +27,7 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   fi
   
   # add thor user to dialout
-  sudo usermod -aG dialout thor 
+  sudo usermod -aG dialout thor
 
   # checkout robot packages
   echo ">>> Install packages: motion, vt_hands moveit_planning"
