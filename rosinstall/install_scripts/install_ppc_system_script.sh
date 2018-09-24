@@ -24,8 +24,8 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   sudo usermod -aG dialout thor 
 
   # checkout robot packages
-  echo ">>> Install packages: perception manipulation_planning moveit_planning common_msgs object_templates vt_hands vt_hands_controller footstep_planning"
-  bash -ic "thor install perception manipulation_planning moveit_planning common_msgs object_templates vt_hands vt_hands_controller footstep_planning"
+  echo ">>> Install packages:"
+  bash -ic "thor install perception"
   bash -ic "thor update_make"
 
   # enable systemd init script

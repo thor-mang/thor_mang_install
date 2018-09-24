@@ -30,8 +30,8 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   sudo usermod -aG dialout thor
 
   # checkout robot packages
-  echo ">>> Install packages: motion, vt_hands moveit_planning"
-  bash -ic "thor install motion vt_hands moveit_planning"
+  echo ">>> Install packages:"
+  bash -ic "thor install motion"
   bash -ic "thor update_make"
 
   # enable systemd init script
