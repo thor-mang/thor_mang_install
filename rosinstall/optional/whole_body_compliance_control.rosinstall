@@ -1,0 +1,1 @@
+- git: {local-name: src/thor/thor_mang_whole_body_compliance_control, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_whole_body_compliance_control.git', version: master}
