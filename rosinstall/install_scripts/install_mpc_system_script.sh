@@ -35,7 +35,7 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   bash -ic "thor update_make"
 
   # enable systemd init script
-  echo ">>> setup autostart"
+  echo ">>> Setup autostart"
   sudo systemctl enable thor.service
   # if desired to check if successfull -> "sudo systemctl is-enabled thor.service" should return "enabled"
 
