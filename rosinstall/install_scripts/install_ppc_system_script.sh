@@ -39,7 +39,6 @@ if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   echo ">>> install realsense"
   sudo apt-get install ros-kinetic-realsense-camera
   
-
   echo "Installation completed! Please reboot system now."
 else
   echo ">>> Install cancelled by user."

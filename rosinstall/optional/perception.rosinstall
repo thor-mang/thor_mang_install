@@ -1,10 +1,10 @@
 # ROBOTIS Perception Demo
-- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: kinetic-devel}
+#- git: {local-name: src/thor/robotis/ppc, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-PPC.git', version: kinetic-devel}
 
 # Hector Perception
-- git: {local-name: src/external/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: kinetic-devel}
-- git: {local-name: src/vigir/vigir_utilities, uri: 'https://github.com/team-vigir/vigir_utilities.git', version: master}
-- git: {local-name: src/vigir/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
-- git: {local-name: src/vigir/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs.git', version: master}
-- git: {local-name: src/vigir/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception.git', version: thormang3}
-- git: {local-name: src/thor/thor_mang_robot_bringup: uri: 'https://github.com/thor-mang/thor_mang_robot_bringup.git', version: master}
+#- git: {local-name: src/external/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: kinetic-devel}
+#- git: {local-name: src/vigir/vigir_utilities, uri: 'https://github.com/team-vigir/vigir_utilities.git', version: master}
+#- git: {local-name: src/vigir/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}
+#- git: {local-name: src/vigir/vigir_perception_msgs, uri: 'https://github.com/team-vigir/vigir_perception_msgs.git', version: master}
+#- git: {local-name: src/vigir/vigir_perception, uri: 'https://github.com/team-vigir/vigir_perception.git', version: thormang3}
+#- git: {local-name: src/thor/thor_mang_robot_bringup: uri: 'https://github.com/thor-mang/thor_mang_robot_bringup.git', version: master}
