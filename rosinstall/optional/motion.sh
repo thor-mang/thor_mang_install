@@ -1,3 +1,3 @@
 #!/bin/bash
 
-depends vt_hands moveit_planning world_model
+depends vt_hand moveit_planning world_model
