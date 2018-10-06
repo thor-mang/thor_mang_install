@@ -6,6 +6,7 @@ read -N 1 REPLY
 echo
 
 if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
+  # install missing packages
   cd /
   if [ ! -d /.git ]; then
     echo ">>> Install system configs"

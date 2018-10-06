@@ -9,9 +9,6 @@ echo
 
 if [[ "$REPLY" = "y" || "$REPLY" = "Y" ]]; then
   # install missing packages
-  echo ">>> Install additional system debs"
-  apt_install chrony
-
   cd /
   if [ ! -d /.git ]; then
     echo ">>> Install system configs"
