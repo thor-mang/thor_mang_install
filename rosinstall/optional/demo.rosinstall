@@ -1,3 +1,3 @@
-- git: {local-name: src/thor/thor_mang_demo, uri: 'git@git.sim.informatik.tu-darmstadt.de:oehler/thor_mang_demo.git', version: master}
+- git: {local-name: src/thor/thor_mang_demo, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_demo.git', version: master}
 - git: {local-name: src/motion_editor, uri: 'https://github.com/tu-darmstadt-ros-pkg/motion_editor.git', version: kinetic-devel}
 - git: {local-name: src/thor/thor_mang_utils, uri: 'https://github.com/thor-mang/thor_mang_utils.git', version: master}
