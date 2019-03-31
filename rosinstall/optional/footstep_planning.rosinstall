@@ -1,12 +1,16 @@
 # SBPL
 - git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
 
-# Footstep Planning
-- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
-- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_basics, uri: 'https://github.com/team-vigir/vigir_footstep_planning_basics.git', version: kinetic-devel}
-- git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_core, uri: 'https://github.com/team-vigir/vigir_footstep_planning_core.git', version: master}
-- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: master}
-- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: master}
+# l3 Footstep Planning Framework
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_msgs.git', version: master}
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_libs.git', version: master}
+- git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_core.git', version: master}
 
-# Terrain Classifier
-- git: {local-name: src/vigir/vigir_footstep_planning/vigir_terrain_classifier, uri: 'https://github.com/team-vigir/vigir_terrain_classifier.git', version: master}
+# l3 Terrain Model Generator
+- git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_msgs.git', version: master}
+- git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model.git', version: master}
+- git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_generator, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_generator.git', version: master}
+
+# l3 thormang integration
+#- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: master}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: l3_integration}
