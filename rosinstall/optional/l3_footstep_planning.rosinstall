@@ -1,13 +1,20 @@
 # SBPL
 - git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
 
-# l3 Footstep Planning Framework
+# L3 Framework
+- git: {local-name: src/l3/l3_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_msgs.git', version: master}
+- git: {local-name: src/l3/l3_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_libs.git', version: master}
+- git: {local-name: src/l3/l3_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_core.git', version: master}
+- git: {local-name: src/l3/l3_plugins, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_plugins.git', version: master}
+- git: {local-name: src/l3/l3_vis, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_vis.git', version: master}
+
+# L3 Footstep Planning Framework
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_msgs.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_libs.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_core.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_ui, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_ui.git', version: master}
 
-# l3 Terrain Model Generator
+# L3 Terrain Model Generator
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_msgs.git', version: master}
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model.git', version: master}
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_generator, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_generator.git', version: master}

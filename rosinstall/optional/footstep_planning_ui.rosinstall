@@ -1,1 +1,2 @@
+- git: {local-name: src/l3/l3_vis, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_vis.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_ui, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_ui.git', version: master}
