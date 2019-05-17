@@ -18,3 +18,7 @@
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_msgs.git', version: master}
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model.git', version: master}
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_generator, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_generator.git', version: master}
+
+# L3 THORMANG integration
+- git: {local-name: src/thor/thor_mang_l3, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3.git', version: master}
+- git: {local-name: src/thor/thor_mang_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: l3_integration}
