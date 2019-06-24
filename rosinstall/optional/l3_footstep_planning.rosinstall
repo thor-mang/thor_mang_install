@@ -22,3 +22,4 @@
 # L3 THORMANG integration
 - git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_config, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3_config.git', version: master}
 - git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_footstep_planning/thor_mang_footstep_planner, uri: 'https://github.com/thor-mang/thor_mang_footstep_planner.git', version: l3_integration}
+- git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_footstep_planning/thor_mang_footstep_planning_plugins, uri: 'https://github.com/thor-mang/thor_mang_footstep_planning_plugins.git', version: l3_integration}
