@@ -1,5 +1,5 @@
 # SBPL
-- git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
+#- git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
 
 # Footstep Planning
 - git: {local-name: src/vigir/vigir_footstep_planning/vigir_footstep_planning_msgs, uri: 'https://github.com/team-vigir/vigir_footstep_planning_msgs.git', version: master}
