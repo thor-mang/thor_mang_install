@@ -13,7 +13,7 @@ AlwaysBreakTemplateDeclarations: true
 AlwaysBreakBeforeMultilineStrings: false
 BreakBeforeBinaryOperators: false
 BreakBeforeTernaryOperators: false
-#BreakInheritanceListBeforeComma: true
+BreakInheritanceList: BeforeComma
 BreakConstructorInitializersBeforeComma: true
 BinPackParameters: true
 ColumnLimit:    240
