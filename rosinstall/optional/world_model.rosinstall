@@ -1,3 +1,3 @@
 # Laserscanner Processing
-- git: {local-name: src/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: vlp16_filter}
+- git: {local-name: src/robot_self_filter, uri: 'https://github.com/team-vigir/robot_self_filter.git', version: melodic-devel}
 - git: {local-name: src/vigir/vigir_lidar_proc, uri: 'https://github.com/team-vigir/vigir_lidar_proc.git', version: master}

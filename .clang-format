@@ -1,5 +1,5 @@
 ---
-BasedOnStyle:  Google
+BasedOnStyle: Google
 AccessModifierOffset: -2
 ConstructorInitializerIndentWidth: 2
 AlignEscapedNewlinesLeft: false
@@ -13,10 +13,10 @@ AlwaysBreakTemplateDeclarations: true
 AlwaysBreakBeforeMultilineStrings: false
 BreakBeforeBinaryOperators: false
 BreakBeforeTernaryOperators: false
-#BreakInheritanceListBeforeComma: true
-BreakConstructorInitializersBeforeComma: true
+BreakInheritanceList: BeforeComma
+BreakConstructorInitializers: BeforeComma
 BinPackParameters: true
-ColumnLimit:    240
+ColumnLimit: 240
 ConstructorInitializerAllOnOneLineOrOnePerLine: false
 DerivePointerBinding: false
 PointerBindsToType: true
@@ -47,6 +47,8 @@ SpaceBeforeAssignmentOperators: true
 ContinuationIndentWidth: 4
 SortIncludes: false
 SpaceAfterCStyleCast: false
+FixNamespaceComments: true
+IncludeBlocks: Preserve
 
 # Configure each individual brace in BraceWrapping
 BreakBeforeBraces: Custom
