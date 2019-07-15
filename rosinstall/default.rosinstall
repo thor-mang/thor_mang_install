@@ -7,8 +7,8 @@
 - git: {local-name: src/thor/thor_mang_common, uri: 'https://github.com/thor-mang/thor_mang_common.git', version: thormang3} 
 - git: {local-name: src/thor/thor_mang_common_msgs, uri: 'https://github.com/thor-mang/thor_mang_common_msgs.git', version: master}
 - git: {local-name: src/thor/thor_mang_control_mode_switcher, uri: 'https://github.com/thor-mang/thor_mang_control_mode_switcher.git', version: master}
-- git: {local-name: src/hector_models, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_models.git', version: thormang3}
-- git: {local-name: src/hector_localization, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_localization.git', version: catkin} 
+- git: {local-name: src/hector/hector_models, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_models.git', version: thormang3}
+- git: {local-name: src/hector/hector_localization, uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_localization.git', version: catkin} 
 - git: {local-name: src/vigir/vigir_generic_params, uri: 'https://github.com/team-vigir/vigir_generic_params.git', version: master}
 - git: {local-name: src/vigir/vigir_pluginlib, uri: 'https://github.com/team-vigir/vigir_pluginlib.git', version: kinetic-devel}
 

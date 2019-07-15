@@ -1,11 +1,11 @@
 - git:
     uri: https://github.com/tu-darmstadt-ros-pkg/hector_calibration.git
-    local-name: src/hector_calibration
+    local-name: src/hector/hector_calibration
     version: kinetic-devel
     
 - git:
     uri: https://github.com/team-vigir/vigir_lidar_proc.git
-    local-name: src/external/vigir_lidar_proc
+    local-name: src/vigir/vigir_lidar_proc
     version: kinetic-devel
     
 - git:

@@ -1,5 +1,5 @@
 # SBPL
-- git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
+#- git: {local-name: src/external/sbpl, uri: 'https://github.com/sbpl/sbpl.git', version: master}
 
 # L3 Framework
 - git: {local-name: src/l3/l3_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_msgs.git', version: master}
