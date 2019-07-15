@@ -1,6 +1,6 @@
 # Minimal ROBOTIS setup
 - git: {local-name: src/thor/robotis/dynamixel_sdk, uri: 'https://github.com/tu-darmstadt-ros-pkg/DynamixelSDK.git', version: thormang3}
-- git: {local-name: src/thor/robotis/common, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Common.git', version: kinetic-devel}
+- git: {local-name: src/thor/robotis/common, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-Common.git', version: melodic-devel}
 - git: {local-name: src/thor/robotis/math, uri: 'https://github.com/thor-mang/ROBOTIS-Math.git', version: kinetic-devel}
 - git: {local-name: src/thor/robotis/thormang_msgs, uri: 'https://github.com/thor-mang/ROBOTIS-THORMANG-msgs.git', version: kinetic-devel}
 - git: {local-name: src/thor/robotis/framework_msgs, uri: 'https://github.com/thor-mang/ROBOTIS-Framework-msgs.git', version: kinetic-devel}
