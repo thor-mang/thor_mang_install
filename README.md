@@ -5,13 +5,13 @@ Provides rosinstall files and scripts for making installation of thor_mang softw
 
 General remarks:
 
-*The standard computer setup we use is Ubuntu 16.04/64Bit*
+*The standard computer setup we use is Ubuntu 18.04/64Bit*
 * Note that other setups might work, but cannot be supported due to the overhead that would involve.
-* Install ROS Kinetic as described here: http://wiki.ros.org/indigo/Installation/Ubuntu
+* Install ROS Melodic as described here: http://wiki.ros.org/melodic/Installation/Ubuntu
 
 Choose the desktop variant:
 <pre>
-sudo apt-get install ros-kinetic-desktop
+sudo apt-get install ros-melodic-desktop
 </pre>
 
 Checkout software (please take note of the . at the end):
@@ -39,11 +39,6 @@ For simulation you need to install following rosinstalls:
 <pre>
 thor install simulation ui
 thor update_make
-</pre>
-
-Afterwards run the Gazebo install script (even you have already a Gazebo version installed; in this case just select the version you have already installed when asked):
-<pre>
-thor install_gazebo 8
 </pre>
 
 ## Running in Simulation
