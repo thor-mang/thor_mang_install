@@ -1,15 +1,10 @@
-- git:
-    uri: https://github.com/tu-darmstadt-ros-pkg/hector_calibration.git
-    local-name: src/hector/hector_calibration
-    version: kinetic-devel
-    
-- git:
-    uri: https://github.com/team-vigir/vigir_lidar_proc.git
-    local-name: src/vigir/vigir_lidar_proc
-    version: kinetic-devel
-    
-- git:
-    local-name: src/ceres-solver
-    uri: 'https://ceres-solver.googlesource.com/ceres-solver.git'
-    version: '1.12.0rc4'
+- git: { local-name: src/hector/hector_calibration,  uri: 'https://github.com/tu-darmstadt-ros-pkg/hector_calibration.git',  version: kinetic-devel}
+
+- git: { local-name: src/vigir/vigir_lidar_proc,  uri: 'https://github.com/team-vigir/vigir_lidar_proc.git',  version: master}
+
+- git: { local-name: src/external/ceres_catkin,  uri: 'https://github.com/ethz-asl/ceres_catkin.git',  version: master}
+- git: { local-name: src/external/catkin_simple,  uri: 'https://github.com/catkin/catkin_simple.git',  version: master}
+- git: { local-name: src/external/suitesparse,  uri: 'https://github.com/ethz-asl/suitesparse.git',  version: master}
+- git: { local-name: src/external/glog_catkin,  uri: 'https://github.com/ethz-asl/glog_catkin.git',  version: master}
+- git: { local-name: src/external/gflags_catkin,  uri: 'https://github.com/ethz-asl/gflags_catkin.git',  version: master}
 
