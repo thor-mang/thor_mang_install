@@ -13,6 +13,7 @@
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_libs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_libs.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_core.git', version: master}
 - git: {local-name: src/l3/l3_footstep_planning/l3_footstep_planning_ui, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_footstep_planning_ui.git', version: master}
+- git: {local-name: src/l3/l3_navigation, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_navigation.git', version: master}
 
 # L3 Terrain Model Generator
 - git: {local-name: src/l3/l3_terrain_modeling/l3_terrain_model_msgs, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_terrain_model_msgs.git', version: master}
