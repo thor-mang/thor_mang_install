@@ -14,6 +14,7 @@ qt4-qmake \
 python-rosdep \
 python-wstool \
 python-catkin-tools \
+python-pip \
 ros-$ROS_DISTRO-desktop \
 ros-$ROS_DISTRO-rqt-multiplot \
 ros-$ROS_DISTRO-map-server \
@@ -31,5 +32,11 @@ ros-$ROS_DISTRO-theora-image-transport \
 ros-$ROS_DISTRO-laser-assembler "
 
 apt_install $PACKAGES_TO_INSTALL
+
+echo "...DONE!"
+
+echo "Installing needed python packages ..."
+
+pip install -q gitpython
 
 echo "...DONE!"
