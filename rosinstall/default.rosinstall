@@ -1,5 +1,5 @@
 # System
-- git: {local-name: src/workspace_scripts, uri: 'https://github.com/tu-darmstadt-ros-pkg/workspace_scripts.git', version: kinetic-devel}
+- git: {local-name: src/workspace_scripts, uri: 'https://github.com/tu-darmstadt-ros-pkg/workspace_scripts.git', version: melodic-devel}
 - git: {local-name: src/thor/thor_mang_scripts, uri: 'https://github.com/thor-mang/thor_mang_scripts.git', version: thormang3}
 - git: {local-name: src/thor/thor_mang_launch, uri: 'https://github.com/thor-mang/thor_mang_launch.git', version: master}
 
