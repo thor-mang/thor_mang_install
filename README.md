@@ -18,7 +18,7 @@ Checkout software (please take note of the . at the end):
 <pre>
 mkdir ~/thor
 cd ~/thor
-git clone https://github.com/thor-mang/thor_mang_install.git .
+git clone https://github.com/thor-mang/thor_mang_install.git . -b melodic-devel
 </pre>
 
 Install software:
