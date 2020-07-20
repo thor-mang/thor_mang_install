@@ -2,4 +2,4 @@
 - git: {local-name: src/motion_editor, uri: 'https://github.com/tu-darmstadt-ros-pkg/motion_editor.git', version: kinetic-devel}
 - git: {local-name: src/thor/thor_mang_utils, uri: 'https://github.com/thor-mang/thor_mang_utils.git', version: master}
 
-- git: {local-name: src/thor/external/humanoid_msgs, uri: 'https://github.com/ahornung/humanoid_msgs.git', version: master}
+- git: {local-name: src/external/humanoid_msgs, uri: 'https://github.com/ahornung/humanoid_msgs.git', version: master}
