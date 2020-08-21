@@ -1,5 +1,7 @@
 #!/bin/bash
 
+ROS_DISTRO="melodic"
+
 apt_install()
 {
     while [[ ! -z "$1" ]]; do
@@ -23,35 +25,13 @@ apt_install python-rosdep python-wstool python-catkin-tools
 echo
 
 # delete old files
-echo ">>> Cleaning up old workspace files..."
 rosinstall/install_scripts/clear_install.sh
 echo
 
 unset CMAKE_PREFIX_PATH
 
-# find an installation of ROS
-if [ -z "$ROS_DISTRO" ]; then
-    _ROS_DISTROS="indigo jade kinetic lunar melodic"
-
-    # use basename of the current folder as default ROS distro
-    ROS_DISTRO=$(basename $(cd `dirname $0`; pwd))
-    for _distro in $_ROS_DISTROS ask; do
-        if [ "$_distro" = "$ROS_DISTRO" ]; then break; fi
-    done
-
-    if [ "$_distro" = "ask" ]; then
-        echo -n "Which ROS distro you want to setup this workspace for ($_ROS_DISTROS)?"
-        echo
-        read ROS_DISTRO
-    fi
-
-    if [ ! -r /opt/ros/$ROS_DISTRO/setup.sh ]; then
-        echo "Directory /opt/ros/$ROS_DISTRO does not exists!"
-        exit 1
-    fi
-fi
-
-source /opt/ros/$ROS_DISTRO/setup.sh
+# source an installation of ROS
+source /opt/ros/$ROS_DISTRO/setup.bash
 echo
 
 # initialize workspace
