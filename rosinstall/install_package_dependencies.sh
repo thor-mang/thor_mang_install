@@ -38,6 +38,6 @@ echo "...DONE!"
 
 echo "Installing needed python packages ..."
 
-pip install gitpython
+pip install -q gitpython
 
 echo "...DONE!"
