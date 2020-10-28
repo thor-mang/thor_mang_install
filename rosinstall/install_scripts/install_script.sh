@@ -39,6 +39,7 @@ if [ ! -f ".rosinstall" ]; then
     wstool init .
 elif [ ! -d ".catkin_tools" ]; then
     catkin init
+    catkin config --cmake-args -DCMAKE_BUILD_TYPE=RelWithDebInfo
 fi
 
 # merge rosinstall files from rosinstall/*.rosinstall
