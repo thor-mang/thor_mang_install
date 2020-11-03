@@ -7,13 +7,12 @@ General remarks:
 
 *The standard computer setup we use is Ubuntu 18.04/64Bit with ROS Melodic*
 * Note that other setups might work, but cannot be supported due to the overhead that would involve.
-* The scripts require a working ssh-key setup for git.sim.informatik.tu-darmstadt.de and the key has to be added to the ssh-agent ([further deails](https://kamarada.github.io/en/2019/07/14/using-git-with-ssh-keys/#.X3WaLpqxWV5))
 
 Checkout software (please take note of the . at the end):
 <pre>
 mkdir ~/thor
 cd ~/thor
-git clone https://github.com/thor-mang/thor_mang_install.git .
+git clone https://github.com/thor-mang/thor_mang_install.git . -b melodic-devel
 </pre>
 
 If not already done, *install ROS Melodic* using the setup script, which is based on the official [tutorial](http://wiki.ros.org/melodic/Installation/Ubuntu) (using desktop variant):
