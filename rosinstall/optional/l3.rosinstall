@@ -9,7 +9,7 @@
 - git: {local-name: src/l3/l3_step_controller, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_step_controller.git', version: master}
 
 # L3 THORMANG integration
-- git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_config, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3_config.git', version: master}
+- git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_config, uri: 'https://github.com/thor-mang/thor_mang_l3_config.git', version: master}
 - git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_plugins, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3_plugins.git', version: master}
 - git: {local-name: src/thor/thor_mang_l3/thor_mang_l3_zmp_walk, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3_zmp_walk.git', version: master}
 
