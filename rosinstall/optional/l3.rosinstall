@@ -3,4 +3,4 @@
 - git: {local-name: src/l3/l3_core, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/l3_core.git', version: master}
 
 # l3 thormang integration
-- git: {local-name: src/thor/thor_mang_l3, uri: 'git@git.sim.informatik.tu-darmstadt.de:ThorMangDev/thor_mang_l3.git', version: master}
+- git: {local-name: src/thor/thor_mang_l3, uri: 'https://github.com/thor-mang/thor_mang_l3_config.git', version: master}
